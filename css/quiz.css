@@ -1,8 +1,26 @@
 /* Plaats je CSS-code in dit bestand */
 
+header {
+    grid-area: header;
+}
+
 nav {
+    grid-area: nav;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+main {
+    grid-area: main;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'nav    main   main';
+    grid-gap: 10px;
+    padding: 10px;
 }
 
 .page {
