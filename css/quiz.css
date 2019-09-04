@@ -2,16 +2,25 @@
 
 header {
     grid-area: header;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
 }
 
 nav {
     grid-area: nav;
     margin-top: 1em;
     margin-bottom: 1em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
 }
 
 main {
     grid-area: main;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
 }
 
 .grid-container {
@@ -21,12 +30,6 @@ main {
         'nav    main   main';
     grid-gap: 10px;
     padding: 10px;
-}
-
-.page {
-    border-width: 1px;
-    border-color: red;
-    border-style: solid;
 }
 
 #button-start {
