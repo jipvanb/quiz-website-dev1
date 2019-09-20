@@ -62,3 +62,9 @@ main {
     display: block;
     margin: 8px 0;
 }
+
+#documentation-link{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
