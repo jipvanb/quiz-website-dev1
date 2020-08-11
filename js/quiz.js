@@ -22,7 +22,7 @@ function hideAllPages() {
     var startPage = document.getElementById('page-start');
     var questionsPage = document.getElementById('page-questions');
 
-    startPage.style.display = 'none';   
+    startPage.style.display = 'none';
     questionsPage.style.display = 'none';
 }
 
@@ -31,7 +31,7 @@ function hideAllPages() {
  */
 function showStartPage() {
     var page = document.getElementById('page-start');
-    
+
     hideAllPages();
 
     page.style.display = 'block';
@@ -44,12 +44,12 @@ function showStartPage() {
  */
 function showQuestionsPage() {
     var page = document.getElementById('page-questions');
-    
+
     hideAllPages();
 
     page.style.display = 'block';
 
-    window.alert('Je bent nu op de vragenpagina');
+    console.info('Je bent nu op de vragenpagina');
 }
 
 // Initialize
