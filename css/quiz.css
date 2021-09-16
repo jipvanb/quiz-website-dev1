@@ -2,6 +2,7 @@
 
 html {
   background-color: lightblue;
+  /*background-image: linear-gradient(whitesmoke, lightblue);*/
 }
 
 header {
@@ -13,7 +14,8 @@ header {
   align-items: center;*/
   border-radius: 25px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  /*background-color: rgba(255, 255, 255, 0.5);*/
+  background-image: linear-gradient(whitesmoke, lightblue);
 }
 
 nav {
@@ -27,7 +29,7 @@ nav {
   /*align-items: center;*/
   border-radius: 25px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 main {
@@ -39,7 +41,7 @@ main {
   align-items: center;*/
   border-radius: 25px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .grid-container {
@@ -52,9 +54,28 @@ main {
   padding: 10px;
 }
 
+#page-questions {
+  margin-bottom: 47.61px;
+}
+
 button {
   font-weight: bold;
+}
+
+#button-start {
   margin-top: 19.715px;
+}
+
+#button-questions {
+  margin-top: 19.715px;
+}
+
+#button-ans {
+  margin-top: 20px;
+}
+
+#button-correctans {
+  margin-top: 20px;
 }
 
 .testscript {
