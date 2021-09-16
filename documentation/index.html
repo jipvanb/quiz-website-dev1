@@ -1,47 +1,46 @@
 <!-- In dit bestand staat de HTML-code voor je Quiz-documentatie. Je kunt deze code aanpassen. -->
 
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" id="documentation">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Documentatie Quiz Frontend Development</title>
+    <title>Documentatie Kennis Quiz</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/quiz.css">
 </head>
 
 <body>
-    <h1>Documentatie</h1>
+    <h1 id="center">Documentatie</h1>
     <main>
-        <p>
-            Hier komt je documentatie
+        <p id="center">
+        Lees hier de documentatie
         </p>
-        <h2>Testscript</h2>
+        <h2 id="center">Hoe speel je de quiz?</h2>
         <table class="testscript">
             <tr>
                 <th>Stappen</th>
                 <th>Resultaten</th>
-                <th>Data</th>
+                <th>Link</th>
             </tr>
             <tr>
                 <td>
                     <ul>
                         <li>Navigeer naar de site</li>
                         <li>Klik op de knop 'vragen'</li>
-                        <li>Klik op 'ok'</li>
                         <li>Selecteer een antwoord</li>
-                        <li>Selecteer een ander antwoord</li>
+                        <li>klik op de knop 'volgende vraag'</li>
+                        <li>Einde van de quiz</li>
                     </ul>
                 </td>
                 <td>
                     <span>De website wordt nu weergegeven met een introductie en 2 knoppen: 'start' en 'vragen'</span>
-                    <span>Je krijgt een melding waarin aangegeven wordt dat je op de vragenpagina bent beland</span>
-                    <span>De melding verdwijnt. Er is een pagina zichtbaar met daarop een vraag met 4
-                        antwoordmogelijkheden.</span>
-                    <span>Het gegeven antwoord is direct te onderscheiden van de andere antwoorden.</span>
-                    <span>Alleen het gegeven antwoord is direct te onderscheiden van de andere antwoorden.</span>
+                    <span>Er is een pagina zichtbaar met daarop een vraag met 4 antwoordmogelijkheden.</span>
+                    <span>Je ziet of het antwoord goed was en krijgt de optie om naar de volgende vraag te gaan.</span>
+                    <span>Er is een pagina zichtbaar met daarop de tweede vraag met 4 antwoordmogelijkheden.</span>
+                    <span>Nadat alle vragen beantwoord zijn klik je op de knop 'Eindig' en krijgt je score te zien.</span>
                 </td>
                 <td>
                     <span>
@@ -51,6 +50,12 @@
             </tr>
         </table>
     </main>
+    <p id="images">
+    <img src="../img/home.png" alt="home" width="720" height="405">
+    <img src="../img/question.png" alt="question" width="720" height="405">
+    <img src="../img/end.png" alt="end" width="720" height="405">
+    </p>
 </body>
+
 
 </html>
