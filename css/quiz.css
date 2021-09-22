@@ -59,7 +59,7 @@ ul {
   padding: 10px;
 }
 
-#page-questions {
+.page-questions {
   margin-bottom: 47.61px;
 }
 
@@ -79,11 +79,7 @@ button {
   margin-top: 19.715px;
 }
 
-#button-ans {
-  margin-top: 20px;
-}
-
-#button-correctans {
+.button-ans {
   margin-top: 20px;
 }
 
