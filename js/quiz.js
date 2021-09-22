@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 /**
  * Add actions to page buttons 
@@ -32,7 +32,7 @@ function addButtonActions() {
     });
     nextButton1.addEventListener("click", function () {
         showEndPage(); //CHANGE TO QUESTION 2
-    })
+    });
 }
 
 /**
