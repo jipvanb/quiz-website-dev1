@@ -64,7 +64,7 @@ ul {
 }
 
 #page-end {
-  margin-bottom: 45.61px;
+  margin-bottom: 24.06px;
 }
 
 button {
@@ -83,7 +83,7 @@ button {
   margin-top: 20px;
 }
 
-#score {
+.score {
   font-size: x-large;
 }
 
@@ -132,4 +132,25 @@ button {
   position: fixed;
   bottom: 5px;
   right: 5px;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color: #04aa6d;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+.live-score {
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  width: 99%;
 }

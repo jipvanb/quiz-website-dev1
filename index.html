@@ -2,167 +2,211 @@
 
 <!DOCTYPE html>
 <html lang="nl">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Kennis quiz</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/quiz.css">
-</head>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/quiz.css" />
+  </head>
 
-<body>
+  <body>
     <div class="grid-container">
-        <header>
-            <h1>Welkom bij de kennis quiz!</h1>
-        </header>
-        <nav>
-            <button id="button-start">Start</button>
-            <button id="button-questions">Vragen</button>
-        </nav>
-        <main>
+      <header>
+        <h1>Welkom bij de kennis quiz!</h1>
+      </header>
+      <nav>
+        <button id="button-start">Start</button>
+        <button id="button-questions">Vragen</button>
+      </nav>
+      <main>
+        <!--Start pagina-->
+        <div class="page" id="page-start">
+          <h2>Start</h2>
+          <p>
+            In deze quiz wordt jouw algemene kennis getest, iedere vraag heeft 4
+            opties.<br />
+            er zijn 3 tot 4 vragen over ieder onderwerp, in totaal zijn er 10
+            vragen.<br />
+            De quiz duurt ongeveer 5-10 minuten, de 3 onderwerpen die gevraagd
+            worden zijn:<br />
+          </p>
 
-            <!--Start pagina-->
-            <div class="page" id="page-start">
-                <h2>Start</h2>
-                <p>In deze quiz wordt jouw algemene kennis getest, iedere vraag heeft 4 opties.<br>
-                    er zijn 3 tot 4 vragen over ieder onderwerp,
-                    in totaal zijn er 10 vragen.<br>
-                    De quiz duurt ongeveer 5-10 minuten,
-                    de 3 onderwerpen die gevraagd worden zijn:<br>
-                    <ul>
-                    <li>Wetenschap & Technologie</li>
-                    <li>Dieren & Natuur</li>
-                    <li>Cultuur & Geschiedenis</li>
-                    </ul>
-            </div>
+          <ul>
+            <li>Wetenschap & Technologie</li>
+            <li>Dieren & Natuur</li>
+            <li>Cultuur & Geschiedenis</li>
+          </ul>
+        </div>
 
-            <!--Vraag 1 pagina-->
-            <div class="page, page-questions" id="page-questions">
-                <h2>Vraag 1.</h2>
-                <p>Brons is een samenstelling van welke twee metalen?<br></p>
-                <button id="button-next">volgende vraag</button><br>
-                <button class="button-ans" id="button-ans1">ijzer & nickel</button>
-                <button class="button-ans" id="button-correctans">koper & tin</button>
-                <button class="button-ans" id="button-ans2">titanium & koper</button>
-                <button class="button-ans" id="button-ans3">tin & zink</button>
-            </div>
+        <!--Vraag 1 pagina-->
+        <div class="page, page-questions" id="page-questions">
+          <h2>Vraag 1.</h2>
+          <p>Brons is een samenstelling van welke twee metalen?<br /></p>
+          <button id="button-next">volgende vraag</button><br />
+          <button class="button-ans" id="button-ans1">ijzer & nickel</button>
+          <button class="button-ans" id="button-correctans">koper & tin</button>
+          <button class="button-ans" id="button-ans2">titanium & koper</button>
+          <button class="button-ans" id="button-ans3">tin & zink</button>
+        </div>
 
-            <!--Vraag 2 pagina-->
-            <div class="page, page-questions" id="page-questions2">
-                <h2>Vraag 2.</h2>
-                <p>Wat is in Celsius de koudst mogelijke temperatuur die mogelijk is — ook wel het absolute nulpunt genoemd?<br></p>
-                <button id="button-next-2">volgende vraag</button><br>
-                <button class="button-ans" id="button-ans1-2">0 °C</button>
-                <button class="button-ans" id="button-ans2-2">−265 °C</button>
-                <button class="button-ans" id="button-correctans-2">−273 °C</button>
-                <button class="button-ans" id="button-ans3-2">−284 °C</button>
-            </div>
+        <!--Vraag 2 pagina-->
+        <div class="page, page-questions" id="page-questions2">
+          <h2>Vraag 2.</h2>
+          <p>
+            Wat is in Celsius de koudst mogelijke temperatuur die mogelijk is —
+            ook wel het absolute nulpunt genoemd?<br />
+          </p>
+          <button id="button-next-2">volgende vraag</button><br />
+          <button class="button-ans" id="button-ans1-2">0 °C</button>
+          <button class="button-ans" id="button-ans2-2">−265 °C</button>
+          <button class="button-ans" id="button-correctans-2">−273 °C</button>
+          <button class="button-ans" id="button-ans3-2">−284 °C</button>
+        </div>
 
-            <!--Vraag 3 pagina-->
-            <div class="page, page-questions" id="page-questions3">
-                <h2>Vraag 3.</h2>
-                <p>Waarvoor staat de computerterm "CPU"?<br></p>
-                <button id="button-next-3">volgende vraag</button><br>
-                <button class="button-ans" id="button-correctans-3">"Central Processing Unit"</button>
-                <button class="button-ans" id="button-ans1-3">"Computer Processing Unit"</button>
-                <button class="button-ans" id="button-ans2-3">"Computing Unit"</button>
-                <button class="button-ans" id="button-ans3-3">"Central Power Unit"</button>
-            </div>
+        <!--Vraag 3 pagina-->
+        <div class="page, page-questions" id="page-questions3">
+          <h2>Vraag 3.</h2>
+          <p>Waarvoor staat de computerterm "CPU"?<br /></p>
+          <button id="button-next-3">volgende vraag</button><br />
+          <button class="button-ans" id="button-correctans-3">
+            "Central Processing Unit"
+          </button>
+          <button class="button-ans" id="button-ans1-3">
+            "Computer Processing Unit"
+          </button>
+          <button class="button-ans" id="button-ans2-3">
+            "Computing Unit"
+          </button>
+          <button class="button-ans" id="button-ans3-3">
+            "Central Power Unit"
+          </button>
+        </div>
 
-            <!--Vraag 4 pagina-->
-            <div class="page, page-questions" id="page-questions4">
-                <h2>Vraag 4.</h2>
-                <p>Wat is het scheikundige symbool voor zilver?<br></p>
-                <button id="button-next-4">volgende vraag</button><br>
-                <button class="button-ans" id="button-correctans-4">Ag</button>
-                <button class="button-ans" id="button-ans1-4">Au</button>
-                <button class="button-ans" id="button-ans2-4">Zi</button>
-                <button class="button-ans" id="button-ans3-4">Hg</button>
-            </div>
+        <!--Vraag 4 pagina-->
+        <div class="page, page-questions" id="page-questions4">
+          <h2>Vraag 4.</h2>
+          <p>Wat is het scheikundige symbool voor zilver?<br /></p>
+          <button id="button-next-4">volgende vraag</button><br />
+          <button class="button-ans" id="button-correctans-4">Ag</button>
+          <button class="button-ans" id="button-ans1-4">Au</button>
+          <button class="button-ans" id="button-ans2-4">Zi</button>
+          <button class="button-ans" id="button-ans3-4">Hg</button>
+        </div>
 
-            <!--Vraag 5 pagina-->
-            <div class="page, page-questions" id="page-questions5">
-                <h2>Vraag 5.</h2>
-                <p>Ofidiofobie is de extreme angst voor welk soort dieren?<br></p>
-                <button id="button-next-5">volgende vraag</button><br>
-                <button class="button-ans" id="button-ans1-5">Katten</button>
-                <button class="button-ans" id="button-ans3-5">Honden</button>
-                <button class="button-ans" id="button-ans2-5">Spinnen</button>
-                <button class="button-ans" id="button-correctans-5">Slangen</button>
-            </div>
+        <!--Vraag 5 pagina-->
+        <div class="page, page-questions" id="page-questions5">
+          <h2>Vraag 5.</h2>
+          <p>Ofidiofobie is de extreme angst voor welk soort dieren?<br /></p>
+          <button id="button-next-5">volgende vraag</button><br />
+          <button class="button-ans" id="button-ans1-5">Katten</button>
+          <button class="button-ans" id="button-ans3-5">Honden</button>
+          <button class="button-ans" id="button-ans2-5">Spinnen</button>
+          <button class="button-ans" id="button-correctans-5">Slangen</button>
+        </div>
 
-            <!--Vraag 6 pagina-->
-            <div class="page, page-questions" id="page-questions6">
-                <h2>Vraag 6.</h2>
-                <p>Welk kleur bloed hebben inktvissen, kreeften en krabben?<br></p>
-                <button id="button-next-6">volgende vraag</button><br>
-                <button class="button-ans" id="button-ans1-6">Rood</button>
-                <button class="button-ans" id="button-ans2-6">Paars</button>
-                <button class="button-ans" id="button-correctans-6">Blauw</button>
-                <button class="button-ans" id="button-ans3-6">Groen</button>
-            </div>
+        <!--Vraag 6 pagina-->
+        <div class="page, page-questions" id="page-questions6">
+          <h2>Vraag 6.</h2>
+          <p>Welk kleur bloed hebben inktvissen, kreeften en krabben?<br /></p>
+          <button id="button-next-6">volgende vraag</button><br />
+          <button class="button-ans" id="button-ans1-6">Rood</button>
+          <button class="button-ans" id="button-ans2-6">Paars</button>
+          <button class="button-ans" id="button-correctans-6">Blauw</button>
+          <button class="button-ans" id="button-ans3-6">Groen</button>
+        </div>
 
-            <!--Vraag 7 pagina-->
-            <div class="page, page-questions" id="page-questions7">
-                <h2>Vraag 7.</h2>
-                <p>Welk Australisch dier kent men in de Engelse taal als "platypus"?<br></p>
-                <button id="button-next-7">volgende vraag</button><br>
-                <button class="button-ans" id="button-ans1-7">Gans</button>
-                <button class="button-ans" id="button-correctans-7">Vogelbekdier</button>
-                <button class="button-ans" id="button-ans2-7">Bever</button>
-                <button class="button-ans" id="button-ans3-7">kangoeroe</button>
-            </div>
+        <!--Vraag 7 pagina-->
+        <div class="page, page-questions" id="page-questions7">
+          <h2>Vraag 7.</h2>
+          <p>
+            Welk Australisch dier kent men in de Engelse taal als "platypus"?<br />
+          </p>
+          <button id="button-next-7">volgende vraag</button><br />
+          <button class="button-ans" id="button-ans1-7">Gans</button>
+          <button class="button-ans" id="button-correctans-7">
+            Vogelbekdier
+          </button>
+          <button class="button-ans" id="button-ans2-7">Bever</button>
+          <button class="button-ans" id="button-ans3-7">kangoeroe</button>
+        </div>
 
-            <!--Vraag 8 pagina-->
-            <div class="page, page-questions" id="page-questions8">
-                <h2>Vraag 8.</h2>
-                <p>Het Romeinse cijfer "X" is 10. Maar welke waarde stemt overeen met het Romeinse getal "D"?<br></p>
-                <button id="button-next-8">volgende vraag</button><br>
-                <button class="button-ans" id="button-correctans-8">500</button>
-                <button class="button-ans" id="button-ans1-8">50</button>
-                <button class="button-ans" id="button-ans2-8">1000</button>
-                <button class="button-ans" id="button-ans3-8">100</button>
-            </div>
+        <!--Vraag 8 pagina-->
+        <div class="page, page-questions" id="page-questions8">
+          <h2>Vraag 8.</h2>
+          <p>
+            Het Romeinse cijfer "X" is 10. Maar welke waarde stemt overeen met
+            het Romeinse getal "D"?<br />
+          </p>
+          <button id="button-next-8">volgende vraag</button><br />
+          <button class="button-ans" id="button-correctans-8">500</button>
+          <button class="button-ans" id="button-ans1-8">50</button>
+          <button class="button-ans" id="button-ans2-8">1000</button>
+          <button class="button-ans" id="button-ans3-8">100</button>
+        </div>
 
-            <!--Vraag 9 pagina-->
-            <div class="page, page-questions" id="page-questions9">
-                <h2>Vraag 9.</h2>
-                <p>Alfa, bèta, gamma en delta ken je. Maar wat is de vijfde letter van het Griekse alfabet?<br></p>
-                <button id="button-next-9">volgende vraag</button><br>
-                <button class="button-ans" id="button-ans1-9">Charlie</button>
-                <button class="button-ans" id="button-ans2-9">Echo</button>
-                <button class="button-ans" id="button-ans3-9">Bestaat niet</button>
-                <button class="button-ans" id="button-correctans-9">Epsilon</button>
-            </div>
+        <!--Vraag 9 pagina-->
+        <div class="page, page-questions" id="page-questions9">
+          <h2>Vraag 9.</h2>
+          <p>
+            Alfa, bèta, gamma en delta ken je. Maar wat is de vijfde letter van
+            het Griekse alfabet?<br />
+          </p>
+          <button id="button-next-9">volgende vraag</button><br />
+          <button class="button-ans" id="button-ans1-9">Charlie</button>
+          <button class="button-ans" id="button-ans2-9">Echo</button>
+          <button class="button-ans" id="button-ans3-9">Bestaat niet</button>
+          <button class="button-ans" id="button-correctans-9">Epsilon</button>
+        </div>
 
-            <!--Vraag 10 pagina-->
-            <div class="page, page-questions" id="page-questions10">
-                <h2>Vraag 10.</h2>
-                <p>Welke Engelsman publiceerde in juli 1687 zijn meesterwerk ‘Philosophiae Naturalis Principia Mathematica’?<br></p>
-                <button id="button-next-10">volgende vraag</button><br>
-                <button class="button-ans" id="button-correctans-10">Isaac Newton</button>
-                <button class="button-ans" id="button-ans1-10">Leonardo Da Vinci</button>
-                <button class="button-ans" id="button-ans2-10">Galileo Galilei</button>
-                <button class="button-ans" id="button-ans3-10">Albert Einstein</button>
-            </div>
+        <!--Vraag 10 pagina-->
+        <div class="page, page-questions" id="page-questions10">
+          <h2>Vraag 10.</h2>
+          <p>
+            Welke Engelsman publiceerde in juli 1687 zijn meesterwerk
+            ‘Philosophiae Naturalis Principia Mathematica’?<br />
+          </p>
+          <button onclick="move()" id="button-next-10">volgende vraag</button>
+          <br />
+          <button class="button-ans" id="button-correctans-10">
+            Isaac Newton
+          </button>
+          <button class="button-ans" id="button-ans1-10">
+            Leonardo Da Vinci
+          </button>
+          <button class="button-ans" id="button-ans2-10">
+            Galileo Galilei
+          </button>
+          <button class="button-ans" id="button-ans3-10">
+            Albert Einstein
+          </button>
+        </div>
 
-            <!--Eind pagina-->
-            <div class="page" id="page-end">
-                <h2>Het Einde</h2><br>
-                <p id="score">
-                <progress value="6" max="10">Score</progress><br>
-                Je hebt 6 van de 10 vragen goed!</p>
-            </div>
-        </main>
+        <!--Eind pagina-->
+        <div class="page, score" id="page-end">
+          <h2>Het Einde</h2>
+          <!--Old score counter
+          <p id="score">
+            <progress value="6" max="10">Score</progress><br />
+            Je hebt 6 van de 10 vragen goed!
+          </p>-->
+          <div id="myProgress">
+            <div id="myBar">0</div>
+          </div>
+          <p id="eindscore">..</p>
+        </div>
+      </main>
+    </div>
+
+    <div class="live-score">
+      <h1 id="counter-display">..</h1>
     </div>
 
     <!--documentatie-->
     <a class="documentation-link" href="documentation/">
-        Bekijk hier mijn documentatie
+      Bekijk hier mijn documentatie
     </a>
     <script src="js/quiz.js"></script>
-</body>
-
+  </body>
 </html>
