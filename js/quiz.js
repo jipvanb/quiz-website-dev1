@@ -245,6 +245,11 @@ function addButtonActions() {
   nextButton10.addEventListener("click", function () {
     showEndPage();
   });
+
+  //Start end bar animation
+  nextButton10.addEventListener("click", function () {
+    move();
+  });
 }
 
 /**
@@ -1477,16 +1482,17 @@ function move() {
     var width = 1;
     var id = setInterval(frame, 25);
     var eind = document.getElementById("eindscore");
-    function frame() {
-      if (width >= count * 10) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width / 10;
-        eind.innerHTML = "Gefeliciteerd! Je hebt " + count + " punten gehaald!";
-      }
+    frame();
+  }
+  function frame() {
+    if (width >= count * 10) {
+      clearInterval(id);
+      i = 0;
+    } else {
+      width++;
+      elem.style.width = width + "%";
+      elem.innerHTML = width / 10;
+      eind.innerHTML = "Gefeliciteerd! Je hebt " + count + " punten gehaald!";
     }
   }
 }
