@@ -17,8 +17,8 @@
         <h1>Welkom bij de kennis quiz!</h1>
       </header>
       <nav>
-        <button id="button-start">Start</button>
-        <button id="button-questions">Vragen</button>
+        <button id="button-start"><span>Start</span></button><br />
+        <button id="button-questions"><span>Vragen</span></button>
       </nav>
       <main>
         <!--Start pagina-->
@@ -44,7 +44,8 @@
         <div class="page, page-questions" id="page-questions">
           <h2>Vraag 1.</h2>
           <p>Brons is een samenstelling van welke twee metalen?<br /></p>
-          <button id="button-next">volgende vraag</button><br />
+          <button class="button-ans" id="button-next">volgende vraag</button
+          ><br /><br />
           <button class="button-ans" id="button-ans1">ijzer & nickel</button>
           <button class="button-ans" id="button-correctans">koper & tin</button>
           <button class="button-ans" id="button-ans2">titanium & koper</button>
@@ -58,7 +59,8 @@
             Wat is in Celsius de koudst mogelijke temperatuur die mogelijk is —
             ook wel het absolute nulpunt genoemd?<br />
           </p>
-          <button id="button-next-2">volgende vraag</button><br />
+          <button class="button-ans" id="button-next-2">volgende vraag</button
+          ><br /><br />
           <button class="button-ans" id="button-ans1-2">0 °C</button>
           <button class="button-ans" id="button-ans2-2">−265 °C</button>
           <button class="button-ans" id="button-correctans-2">−273 °C</button>
@@ -69,7 +71,8 @@
         <div class="page, page-questions" id="page-questions3">
           <h2>Vraag 3.</h2>
           <p>Waarvoor staat de computerterm "CPU"?<br /></p>
-          <button id="button-next-3">volgende vraag</button><br />
+          <button class="button-ans" id="button-next-3">volgende vraag</button
+          ><br /><br />
           <button class="button-ans" id="button-correctans-3">
             "Central Processing Unit"
           </button>
@@ -88,7 +91,8 @@
         <div class="page, page-questions" id="page-questions4">
           <h2>Vraag 4.</h2>
           <p>Wat is het scheikundige symbool voor zilver?<br /></p>
-          <button id="button-next-4">volgende vraag</button><br />
+          <button class="button-ans" id="button-next-4">volgende vraag</button
+          ><br /><br />
           <button class="button-ans" id="button-correctans-4">Ag</button>
           <button class="button-ans" id="button-ans1-4">Au</button>
           <button class="button-ans" id="button-ans2-4">Zi</button>
@@ -99,7 +103,8 @@
         <div class="page, page-questions" id="page-questions5">
           <h2>Vraag 5.</h2>
           <p>Ofidiofobie is de extreme angst voor welk soort dieren?<br /></p>
-          <button id="button-next-5">volgende vraag</button><br />
+          <button class="button-ans" id="button-next-5">volgende vraag</button
+          ><br /><br />
           <button class="button-ans" id="button-ans1-5">Katten</button>
           <button class="button-ans" id="button-ans3-5">Honden</button>
           <button class="button-ans" id="button-ans2-5">Spinnen</button>
@@ -110,7 +115,8 @@
         <div class="page, page-questions" id="page-questions6">
           <h2>Vraag 6.</h2>
           <p>Welk kleur bloed hebben inktvissen, kreeften en krabben?<br /></p>
-          <button id="button-next-6">volgende vraag</button><br />
+          <button class="button-ans" id="button-next-6">volgende vraag</button
+          ><br /><br />
           <button class="button-ans" id="button-ans1-6">Rood</button>
           <button class="button-ans" id="button-ans2-6">Paars</button>
           <button class="button-ans" id="button-correctans-6">Blauw</button>
@@ -123,7 +129,8 @@
           <p>
             Welk Australisch dier kent men in de Engelse taal als "platypus"?<br />
           </p>
-          <button id="button-next-7">volgende vraag</button><br />
+          <button class="button-ans" id="button-next-7">volgende vraag</button
+          ><br /><br />
           <button class="button-ans" id="button-ans1-7">Gans</button>
           <button class="button-ans" id="button-correctans-7">
             Vogelbekdier
@@ -139,7 +146,8 @@
             Het Romeinse cijfer "X" is 10. Maar welke waarde stemt overeen met
             het Romeinse getal "D"?<br />
           </p>
-          <button id="button-next-8">volgende vraag</button><br />
+          <button class="button-ans" id="button-next-8">volgende vraag</button
+          ><br /><br />
           <button class="button-ans" id="button-correctans-8">500</button>
           <button class="button-ans" id="button-ans1-8">50</button>
           <button class="button-ans" id="button-ans2-8">1000</button>
@@ -153,7 +161,8 @@
             Alfa, bèta, gamma en delta ken je. Maar wat is de vijfde letter van
             het Griekse alfabet?<br />
           </p>
-          <button id="button-next-9">volgende vraag</button><br />
+          <button class="button-ans" id="button-next-9">volgende vraag</button
+          ><br /><br />
           <button class="button-ans" id="button-ans1-9">Charlie</button>
           <button class="button-ans" id="button-ans2-9">Echo</button>
           <button class="button-ans" id="button-ans3-9">Bestaat niet</button>
@@ -167,8 +176,8 @@
             Welke Engelsman publiceerde in juli 1687 zijn meesterwerk
             ‘Philosophiae Naturalis Principia Mathematica’?<br />
           </p>
-          <button id="button-next-10">volgende vraag</button>
-          <br />
+          <button class="button-ans" id="button-next-10">volgende vraag</button>
+          <br /><br />
           <button class="button-ans" id="button-correctans-10">
             Isaac Newton
           </button>
@@ -199,7 +208,7 @@
       </main>
     </div>
 
-    <div class="live-score">
+    <div id="live-score" class="live-score">
       <h1 id="counter-display">..</h1>
     </div>
 

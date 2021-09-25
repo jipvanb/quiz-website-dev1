@@ -353,6 +353,7 @@ function showStartPage() {
   //Reset score
   count = 0;
   updateDisplay();
+  var counter = document.getElementById("live-score");
 
   hideAllPages();
 
@@ -407,6 +408,58 @@ function showStartPage() {
   ansButton110.style.backgroundColor = "";
   ansButton210.style.backgroundColor = "";
   ansButton310.style.backgroundColor = "";
+
+  //Reset all cursors of ans buttons
+  //Q1
+  correctAnsButton.style.cursor = "";
+  ansButton1.style.cursor = "";
+  ansButton2.style.cursor = "";
+  ansButton3.style.cursor = "";
+  //Q2
+  correctAnsButton2.style.cursor = "";
+  ansButton12.style.cursor = "";
+  ansButton22.style.cursor = "";
+  ansButton32.style.cursor = "";
+  //Q3
+  correctAnsButton3.style.cursor = "";
+  ansButton13.style.cursor = "";
+  ansButton23.style.cursor = "";
+  ansButton33.style.cursor = "";
+  //Q4
+  correctAnsButton4.style.cursor = "";
+  ansButton14.style.cursor = "";
+  ansButton24.style.cursor = "";
+  ansButton34.style.cursor = "";
+  //Q5
+  correctAnsButton5.style.cursor = "";
+  ansButton15.style.cursor = "";
+  ansButton25.style.cursor = "";
+  ansButton35.style.cursor = "";
+  //Q6
+  correctAnsButton6.style.cursor = "";
+  ansButton16.style.cursor = "";
+  ansButton26.style.cursor = "";
+  ansButton36.style.cursor = "";
+  //Q7
+  correctAnsButton7.style.cursor = "";
+  ansButton17.style.cursor = "";
+  ansButton27.style.cursor = "";
+  ansButton37.style.cursor = "";
+  //Q8
+  correctAnsButton8.style.cursor = "";
+  ansButton18.style.cursor = "";
+  ansButton28.style.cursor = "";
+  ansButton38.style.cursor = "";
+  //Q9
+  correctAnsButton9.style.cursor = "";
+  ansButton19.style.cursor = "";
+  ansButton29.style.cursor = "";
+  ansButton39.style.cursor = "";
+  //Q10
+  correctAnsButton10.style.cursor = "";
+  ansButton110.style.cursor = "";
+  ansButton210.style.cursor = "";
+  ansButton310.style.cursor = "";
 
   //Hide all next Q buttons
   buttonNext1.style.display = "none";
@@ -474,6 +527,8 @@ function showStartPage() {
   ansButton110.disabled = false;
   ansButton210.disabled = false;
   ansButton310.disabled = false;
+
+  counter.style.display = "";
 
   console.info("Je bent nu op de startpagina");
 }
@@ -613,10 +668,12 @@ function showQuestionsPage10() {
  */
 function showEndPage() {
   var page = document.getElementById("page-end");
+  var counter = document.getElementById("live-score");
 
   hideAllPages();
 
   page.style.display = "block";
+  counter.style.display = "none";
 
   console.info("Je bent nu op de eindpagina");
 }
@@ -638,6 +695,10 @@ function anscorrect() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
   addScore();
 }
 
@@ -658,6 +719,10 @@ function answrong1() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("1 was wrong");
 }
@@ -679,6 +744,10 @@ function answrong2() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("2 was wrong");
 }
@@ -700,6 +769,10 @@ function answrong3() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("3 was wrong");
 }
@@ -721,6 +794,10 @@ function anscorrect2() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
   addScore();
 }
 
@@ -741,6 +818,10 @@ function answrong12() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("1 was wrong");
 }
@@ -762,6 +843,10 @@ function answrong22() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("2 was wrong");
 }
@@ -783,6 +868,10 @@ function answrong32() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("3 was wrong");
 }
@@ -804,6 +893,10 @@ function anscorrect3() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
   addScore();
 }
 
@@ -824,6 +917,10 @@ function answrong13() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("1 was wrong");
 }
@@ -845,6 +942,10 @@ function answrong23() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("2 was wrong");
 }
@@ -866,6 +967,10 @@ function answrong33() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("3 was wrong");
 }
@@ -887,6 +992,10 @@ function anscorrect4() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
   addScore();
 }
 
@@ -907,6 +1016,10 @@ function answrong14() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("1 was wrong");
 }
@@ -928,6 +1041,10 @@ function answrong24() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("2 was wrong");
 }
@@ -949,6 +1066,10 @@ function answrong34() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("3 was wrong");
 }
@@ -970,6 +1091,10 @@ function anscorrect5() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
   addScore();
 }
 
@@ -990,6 +1115,10 @@ function answrong15() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("1 was wrong");
 }
@@ -1011,6 +1140,10 @@ function answrong25() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("2 was wrong");
 }
@@ -1032,6 +1165,10 @@ function answrong35() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("3 was wrong");
 }
@@ -1053,6 +1190,10 @@ function anscorrect6() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
   addScore();
 }
 
@@ -1073,6 +1214,10 @@ function answrong16() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("1 was wrong");
 }
@@ -1094,6 +1239,10 @@ function answrong26() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("2 was wrong");
 }
@@ -1115,6 +1264,10 @@ function answrong36() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("3 was wrong");
 }
@@ -1136,6 +1289,10 @@ function anscorrect7() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
   addScore();
 }
 
@@ -1156,6 +1313,10 @@ function answrong17() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("1 was wrong");
 }
@@ -1177,6 +1338,10 @@ function answrong27() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("2 was wrong");
 }
@@ -1198,6 +1363,10 @@ function answrong37() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("3 was wrong");
 }
@@ -1219,6 +1388,10 @@ function anscorrect8() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
   addScore();
 }
 
@@ -1239,6 +1412,10 @@ function answrong18() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("1 was wrong");
 }
@@ -1260,6 +1437,10 @@ function answrong28() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("2 was wrong");
 }
@@ -1281,6 +1462,10 @@ function answrong38() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("3 was wrong");
 }
@@ -1302,6 +1487,10 @@ function anscorrect9() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
   addScore();
 }
 
@@ -1322,6 +1511,10 @@ function answrong19() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("1 was wrong");
 }
@@ -1343,6 +1536,10 @@ function answrong29() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("2 was wrong");
 }
@@ -1364,6 +1561,10 @@ function answrong39() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("3 was wrong");
 }
@@ -1385,6 +1586,10 @@ function anscorrect10() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
   addScore();
 }
 
@@ -1405,6 +1610,10 @@ function answrong110() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("1 was wrong");
 }
@@ -1426,6 +1635,10 @@ function answrong210() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("2 was wrong");
 }
@@ -1447,6 +1660,10 @@ function answrong310() {
   ansButton1.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
 
   console.info("3 was wrong");
 }
