@@ -87,8 +87,13 @@ ul {
   padding: 10px;
 }
 
+#page-start {
+  font-size: 19px;
+}
+
 .page-questions {
   margin-bottom: 47.61px;
+  font-size: 19px;
 }
 
 #page-end {
@@ -103,7 +108,7 @@ button {
 #button-questions {
   display: inline-block;
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: salmon;
   border: none;
   color: #ffffff;
   text-align: center;
@@ -152,7 +157,7 @@ button {
 
 .button-ans,
 .button-next {
-  background-color: lightsalmon;
+  background-color: salmon;
   border: none;
   color: white;
   padding: 13px 20px;
@@ -162,6 +167,14 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button-ans:hover,
+.button-next:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .score {
@@ -223,7 +236,7 @@ button {
 #myBar {
   width: 0%;
   height: 30px;
-  background-color: rgb(12, 114, 139);
+  background-color: green;
   text-align: center;
   line-height: 30px;
   color: white;

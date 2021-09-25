@@ -688,7 +688,7 @@ function anscorrect() {
   var ansButton3 = document.getElementById("button-ans3");
   var correctAnsButton = document.getElementById("button-correctans");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   buttonNext.style.display = "";
   console.info("correct");
   correctAnsButton.disabled = true;
@@ -712,7 +712,7 @@ function answrong1() {
   var ansButton3 = document.getElementById("button-ans3");
   var correctAnsButton = document.getElementById("button-correctans");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton1.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -737,7 +737,7 @@ function answrong2() {
   var correctAnsButton = document.getElementById("button-correctans");
   var buttonNext = document.getElementById("button-next");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton2.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -762,7 +762,7 @@ function answrong3() {
   var correctAnsButton = document.getElementById("button-correctans");
   var buttonNext = document.getElementById("button-next");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton3.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -787,7 +787,7 @@ function anscorrect2() {
   var ansButton3 = document.getElementById("button-ans3-2");
   var correctAnsButton = document.getElementById("button-correctans-2");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   buttonNext.style.display = "";
   console.info("correct");
   correctAnsButton.disabled = true;
@@ -811,7 +811,7 @@ function answrong12() {
   var ansButton3 = document.getElementById("button-ans3-2");
   var correctAnsButton = document.getElementById("button-correctans-2");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton1.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -836,7 +836,7 @@ function answrong22() {
   var correctAnsButton = document.getElementById("button-correctans-2");
   var buttonNext = document.getElementById("button-next-2");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton2.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -861,7 +861,7 @@ function answrong32() {
   var correctAnsButton = document.getElementById("button-correctans-2");
   var buttonNext = document.getElementById("button-next-2");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton3.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -886,7 +886,7 @@ function anscorrect3() {
   var ansButton3 = document.getElementById("button-ans3-3");
   var correctAnsButton = document.getElementById("button-correctans-3");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   buttonNext.style.display = "";
   console.info("correct");
   correctAnsButton.disabled = true;
@@ -910,7 +910,7 @@ function answrong13() {
   var ansButton3 = document.getElementById("button-ans3-3");
   var correctAnsButton = document.getElementById("button-correctans-3");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton1.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -935,7 +935,7 @@ function answrong23() {
   var correctAnsButton = document.getElementById("button-correctans-3");
   var buttonNext = document.getElementById("button-next-3");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton2.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -960,7 +960,7 @@ function answrong33() {
   var correctAnsButton = document.getElementById("button-correctans-3");
   var buttonNext = document.getElementById("button-next-3");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton3.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -985,7 +985,7 @@ function anscorrect4() {
   var ansButton3 = document.getElementById("button-ans3-4");
   var correctAnsButton = document.getElementById("button-correctans-4");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   buttonNext.style.display = "";
   console.info("correct");
   correctAnsButton.disabled = true;
@@ -1009,7 +1009,7 @@ function answrong14() {
   var ansButton3 = document.getElementById("button-ans3-4");
   var correctAnsButton = document.getElementById("button-correctans-4");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton1.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1034,7 +1034,7 @@ function answrong24() {
   var correctAnsButton = document.getElementById("button-correctans-4");
   var buttonNext = document.getElementById("button-next-4");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton2.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1059,7 +1059,7 @@ function answrong34() {
   var correctAnsButton = document.getElementById("button-correctans-4");
   var buttonNext = document.getElementById("button-next-4");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton3.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1084,7 +1084,7 @@ function anscorrect5() {
   var ansButton3 = document.getElementById("button-ans3-5");
   var correctAnsButton = document.getElementById("button-correctans-5");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   buttonNext.style.display = "";
   console.info("correct");
   correctAnsButton.disabled = true;
@@ -1108,7 +1108,7 @@ function answrong15() {
   var ansButton3 = document.getElementById("button-ans3-5");
   var correctAnsButton = document.getElementById("button-correctans-5");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton1.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1133,7 +1133,7 @@ function answrong25() {
   var correctAnsButton = document.getElementById("button-correctans-5");
   var buttonNext = document.getElementById("button-next-5");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton2.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1158,7 +1158,7 @@ function answrong35() {
   var correctAnsButton = document.getElementById("button-correctans-5");
   var buttonNext = document.getElementById("button-next-5");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton3.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1183,7 +1183,7 @@ function anscorrect6() {
   var ansButton3 = document.getElementById("button-ans3-6");
   var correctAnsButton = document.getElementById("button-correctans-6");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   buttonNext.style.display = "";
   console.info("correct");
   correctAnsButton.disabled = true;
@@ -1207,7 +1207,7 @@ function answrong16() {
   var ansButton3 = document.getElementById("button-ans3-6");
   var correctAnsButton = document.getElementById("button-correctans-6");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton1.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1232,7 +1232,7 @@ function answrong26() {
   var correctAnsButton = document.getElementById("button-correctans-6");
   var buttonNext = document.getElementById("button-next-6");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton2.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1257,7 +1257,7 @@ function answrong36() {
   var correctAnsButton = document.getElementById("button-correctans-6");
   var buttonNext = document.getElementById("button-next-6");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton3.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1282,7 +1282,7 @@ function anscorrect7() {
   var ansButton3 = document.getElementById("button-ans3-7");
   var correctAnsButton = document.getElementById("button-correctans-7");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   buttonNext.style.display = "";
   console.info("correct");
   correctAnsButton.disabled = true;
@@ -1306,7 +1306,7 @@ function answrong17() {
   var ansButton3 = document.getElementById("button-ans3-7");
   var correctAnsButton = document.getElementById("button-correctans-7");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton1.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1331,7 +1331,7 @@ function answrong27() {
   var correctAnsButton = document.getElementById("button-correctans-7");
   var buttonNext = document.getElementById("button-next-7");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton2.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1356,7 +1356,7 @@ function answrong37() {
   var correctAnsButton = document.getElementById("button-correctans-7");
   var buttonNext = document.getElementById("button-next-7");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton3.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1381,7 +1381,7 @@ function anscorrect8() {
   var ansButton3 = document.getElementById("button-ans3-8");
   var correctAnsButton = document.getElementById("button-correctans-8");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   buttonNext.style.display = "";
   console.info("correct");
   correctAnsButton.disabled = true;
@@ -1405,7 +1405,7 @@ function answrong18() {
   var ansButton3 = document.getElementById("button-ans3-8");
   var correctAnsButton = document.getElementById("button-correctans-8");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton1.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1430,7 +1430,7 @@ function answrong28() {
   var correctAnsButton = document.getElementById("button-correctans-8");
   var buttonNext = document.getElementById("button-next-8");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton2.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1455,7 +1455,7 @@ function answrong38() {
   var correctAnsButton = document.getElementById("button-correctans-8");
   var buttonNext = document.getElementById("button-next-8");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton3.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1480,7 +1480,7 @@ function anscorrect9() {
   var ansButton3 = document.getElementById("button-ans3-9");
   var correctAnsButton = document.getElementById("button-correctans-9");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   buttonNext.style.display = "";
   console.info("correct");
   correctAnsButton.disabled = true;
@@ -1504,7 +1504,7 @@ function answrong19() {
   var ansButton3 = document.getElementById("button-ans3-9");
   var correctAnsButton = document.getElementById("button-correctans-9");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton1.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1529,7 +1529,7 @@ function answrong29() {
   var correctAnsButton = document.getElementById("button-correctans-9");
   var buttonNext = document.getElementById("button-next-9");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton2.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1554,7 +1554,7 @@ function answrong39() {
   var correctAnsButton = document.getElementById("button-correctans-9");
   var buttonNext = document.getElementById("button-next-9");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton3.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1579,7 +1579,7 @@ function anscorrect10() {
   var ansButton3 = document.getElementById("button-ans3-10");
   var correctAnsButton = document.getElementById("button-correctans-10");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   buttonNext.style.display = "";
   console.info("correct");
   correctAnsButton.disabled = true;
@@ -1603,7 +1603,7 @@ function answrong110() {
   var ansButton3 = document.getElementById("button-ans3-10");
   var correctAnsButton = document.getElementById("button-correctans-10");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton1.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1628,7 +1628,7 @@ function answrong210() {
   var correctAnsButton = document.getElementById("button-correctans-10");
   var buttonNext = document.getElementById("button-next-10");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton2.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
@@ -1653,7 +1653,7 @@ function answrong310() {
   var correctAnsButton = document.getElementById("button-correctans-10");
   var buttonNext = document.getElementById("button-next-10");
 
-  correctAnsButton.style.backgroundColor = "lightgreen";
+  correctAnsButton.style.backgroundColor = "green";
   ansButton3.style.backgroundColor = "red";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
