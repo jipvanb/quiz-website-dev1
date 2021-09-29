@@ -1686,10 +1686,6 @@ function updateDisplay() {
   counterDisplayElem.innerHTML = "Score: " + count + " punten";
 }
 
-// Initialize
-addButtonActions();
-showStartPage();
-
 //score bar
 var i = 0;
 function move() {
@@ -1713,3 +1709,17 @@ function move() {
     }
   }
 }
+
+//login
+function login() {
+  var naam = prompt("Wat is je naam?");
+  if (naam != null) {
+    console.log(naam);
+  }
+}
+
+// Initialize
+addButtonActions();
+showStartPage();
+login();
+
