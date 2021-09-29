@@ -8,6 +8,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
@@ -189,7 +190,7 @@ button {
   text-align: center;
 }
 
-#center {
+.center {
   text-align: center;
 }
 
