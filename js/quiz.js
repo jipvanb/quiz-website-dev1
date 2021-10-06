@@ -1,5 +1,7 @@
 "use strict";
 
+var student = "";
+
 /**
  * Add actions to page buttons
  */
@@ -685,21 +687,6 @@ function showQuestionsPage10() {
   page.style.display = "block";
 
   console.info("Je bent nu op de vragenpagina deel 10");
-}
-
-/**
- * Show end page
- */
-function showEndPage() {
-  var page = document.getElementById("page-end");
-  var counter = document.getElementById("live-score");
-
-  hideAllPages();
-
-  page.style.display = "block";
-  counter.style.display = "none";
-
-  console.info("Je bent nu op de eindpagina");
 }
 
 /**
@@ -1734,7 +1721,6 @@ function move() {
   }
 }
 
-
 //login POGING 2
 function login() {
   var naam = document.getElementById("naam").value;
@@ -1794,8 +1780,13 @@ function studentIdentificationFailed(errorMessage) {
   error.style.display = "";
   console.error(errorMessage);
   console.log("nee error");
-
   // Schrijf hier de code die uitgevoerd moet worden als het studentnummer NIET klopt
+}
+
+//send score to api
+function sendScore() {
+  //xHttp.open("POST", "https://quiz.clow.nl/v1/score", s1168975, student.number);
+  console.log(student.number);
 }
 
 // Initialize
