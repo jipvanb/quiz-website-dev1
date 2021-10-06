@@ -1,6 +1,6 @@
 "use strict";
 
-var student = "";
+var studentnumber;
 
 /**
  * Add actions to page buttons
@@ -687,6 +687,20 @@ function showQuestionsPage10() {
   page.style.display = "block";
 
   console.info("Je bent nu op de vragenpagina deel 10");
+}
+
+/**
+ * Show end page
+ */
+function showEndPage() {
+  var page = document.getElementById("page-end");
+
+  hideAllPages();
+
+  page.style.display = "block";
+
+  console.info("Je bent nu bij het einde");
+  sendScore();
 }
 
 /**
@@ -1746,6 +1760,7 @@ function login() {
           var response = JSON.parse(xHttp.response);
           if (xHttp.status == 200) {
               studentIdentificationSucces(response);
+              studentnumber = response.number;
           } else {
               studentIdentificationFailed(response);
           }
@@ -1785,8 +1800,34 @@ function studentIdentificationFailed(errorMessage) {
 
 //send score to api
 function sendScore() {
-  //xHttp.open("POST", "https://quiz.clow.nl/v1/score", s1168975, student.number);
-  console.log(student.number);
+  var xHttp = new XMLHttpRequest();
+  xHttp.onreadystatechange = function () {
+    if (xHttp.readyState == XMLHttpRequest.DONE) {
+      var response = JSON.parse(xHttp.response);
+      console.log(response);
+  }
+};
+  xHttp.onerror = function () {
+      console.log("error when sending score");
+  };
+  xHttp.open("POST", "https://quiz.clow.nl/v1/score", "s1168975", "s1168975", 9);
+  xHttp.send();
+}
+
+//get highscores from api
+ function getScore() {
+  var xHttp = new XMLHttpRequest();
+  xHttp.onreadystatechange = function () {
+    if (xHttp.readyState == XMLHttpRequest.DONE) {
+      var response = JSON.parse(xHttp.response);
+          console.log(response);
+      }
+  };
+  xHttp.onerror = function () {
+      console.log("error when getting highscores");
+  };
+  xHttp.open("GET", "https://quiz.clow.nl/v1/highscores/s1168975", true);
+  xHttp.send();
 }
 
 // Initialize
