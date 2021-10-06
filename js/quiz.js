@@ -273,7 +273,7 @@ function hideAllPages() {
   var questionsPage8 = document.getElementById("page-questions8");
   var questionsPage9 = document.getElementById("page-questions9");
   var questionsPage10 = document.getElementById("page-questions10");
-  var naam = document.getElementById("naam-display");
+  var error = document.getElementById("error");
 
   startPage.style.display = "none";
   loginPage.style.display = "none";
@@ -288,7 +288,7 @@ function hideAllPages() {
   questionsPage9.style.display = "none";
   questionsPage10.style.display = "none";
   endPage.style.display = "none";
-  naam.style.display = "none";
+  error.style.display = "none";
 }
 
 /**
@@ -308,6 +308,9 @@ function showStartPage() {
   var buttonNext8 = document.getElementById("button-next-8");
   var buttonNext9 = document.getElementById("button-next-9");
   var buttonNext10 = document.getElementById("button-next-10");
+  var naam = document.getElementById("naam-display");
+  
+  naam.style.display = "none";
   //Q1
   var correctAnsButton = document.getElementById("button-correctans");
   var ansButton1 = document.getElementById("button-ans1");
@@ -1731,23 +1734,68 @@ function move() {
   }
 }
 
+
 //login POGING 2
 function login() {
   var naam = document.getElementById("naam").value;
-  var elem = document.getElementById("naam-display-display");
-  var patt = /[^abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 ]/g;
+  var patt = /\bs[s1234567890]/g;
   var result = naam.match(patt);
-  var naamDisplay = document.getElementById("naam-display");
   console.log("naam: " + naam);
   console.log("result: " + result);
-  if (result !== null || naam == "" || naam == null) {
+  if (result == null || naam == "" || naam == null) {
     console.log("nee deel 1");
   } else {
-    showQuestionsPage(); 
-    elem.innerHTML = "naam: " + naam;
+    checkStudent(naam);
     console.log("door naar de vragen");
-    naamDisplay.style.display = "";
   }
+}
+
+/**
+ * Check student number using the API
+ */
+ function checkStudent(number) {
+  var xHttp = new XMLHttpRequest();
+  xHttp.onreadystatechange = function () {
+      if (xHttp.readyState == XMLHttpRequest.DONE) {
+          var response = JSON.parse(xHttp.response);
+          if (xHttp.status == 200) {
+              studentIdentificationSucces(response);
+          } else {
+              studentIdentificationFailed(response);
+          }
+      }
+  };
+  xHttp.onerror = function () {
+      studentIdentificationFailed(xHttp.statusText);
+  };
+  xHttp.open("GET", "https://quiz.clow.nl/v1/student/" + number, true);
+  xHttp.send();
+}
+
+/**
+* Student is successfully identified
+*/
+function studentIdentificationSucces(student) {
+  console.info(student); // Een Javascript-object met studentnummer, voornaam en achternaam
+  var elem = document.getElementById("naam-display-display");
+  var naamDisplay = document.getElementById("naam-display");
+  elem.innerHTML = "Naam: " + student.firstName + " " + student.lastName;
+  showQuestionsPage(); 
+  console.log("succesinlog");
+  naamDisplay.style.display = "";
+  // Schrijf hier de code die uitgevoerd moet worden als het studentnummer klopt
+}
+
+/**
+* Student number is incorrect
+*/
+function studentIdentificationFailed(errorMessage) {
+  var error = document.getElementById("error");
+  error.style.display = "";
+  console.error(errorMessage);
+  console.log("nee error");
+
+  // Schrijf hier de code die uitgevoerd moet worden als het studentnummer NIET klopt
 }
 
 // Initialize
