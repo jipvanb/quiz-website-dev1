@@ -73,6 +73,24 @@ main {
   background-color: rgb(231, 224, 196);
 }
 
+.naam-display {
+  text-align: center;
+  position: absolute;
+  width: fit-content;
+  bottom: 15px;
+  /*position: absolute;
+  align-items: center;
+  bottom: 0px;
+  width: 20%;
+  margin-left: 49%;
+  margin-right: 49%;*/
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000ff;
+  border-radius: 25px;
+  background-color: rgb(231, 224, 196);
+}
+
 ul {
   text-align: center;
   list-style-position: inside;

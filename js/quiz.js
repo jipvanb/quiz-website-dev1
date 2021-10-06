@@ -7,6 +7,7 @@ function addButtonActions() {
   //start
   var startButton = document.getElementById("button-start");
   var questionsButton = document.getElementById("button-questions");
+  var loginButton = document.getElementById("submit");
   //Q1
   var ansButton1 = document.getElementById("button-ans1");
   var ansButton2 = document.getElementById("button-ans2");
@@ -73,7 +74,10 @@ function addButtonActions() {
     showStartPage();
   });
   questionsButton.addEventListener("click", function () {
-    showQuestionsPage();
+    showLoginPage();
+  });
+  loginButton.addEventListener("click", function () {
+    login();
   });
 
   //Q1
@@ -258,6 +262,7 @@ function addButtonActions() {
 function hideAllPages() {
   var startPage = document.getElementById("page-start");
   var endPage = document.getElementById("page-end");
+  var loginPage = document.getElementById("page-login");
   var questionsPage = document.getElementById("page-questions");
   var questionsPage2 = document.getElementById("page-questions2");
   var questionsPage3 = document.getElementById("page-questions3");
@@ -268,8 +273,10 @@ function hideAllPages() {
   var questionsPage8 = document.getElementById("page-questions8");
   var questionsPage9 = document.getElementById("page-questions9");
   var questionsPage10 = document.getElementById("page-questions10");
+  var naam = document.getElementById("naam-display");
 
   startPage.style.display = "none";
+  loginPage.style.display = "none";
   questionsPage.style.display = "none";
   questionsPage2.style.display = "none";
   questionsPage3.style.display = "none";
@@ -281,6 +288,7 @@ function hideAllPages() {
   questionsPage9.style.display = "none";
   questionsPage10.style.display = "none";
   endPage.style.display = "none";
+  naam.style.display = "none";
 }
 
 /**
@@ -531,6 +539,19 @@ function showStartPage() {
   counter.style.display = "";
 
   console.info("Je bent nu op de startpagina");
+}
+
+/**
+ * Show login page
+ */
+ function showLoginPage() {
+  var page = document.getElementById("page-login");
+
+  hideAllPages();
+
+  page.style.display = "block";
+
+  console.info("Je bent nu op de loginpagina");
 }
 
 /**
@@ -1710,16 +1731,25 @@ function move() {
   }
 }
 
-//login
+//login POGING 2
 function login() {
-  var naam = prompt("Wat is je naam?");
-  if (naam != null) {
-    console.log(naam);
+  var naam = document.getElementById("naam").value;
+  var elem = document.getElementById("naam-display-display");
+  var patt = /[^abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 ]/g;
+  var result = naam.match(patt);
+  var naamDisplay = document.getElementById("naam-display");
+  console.log("naam: " + naam);
+  console.log("result: " + result);
+  if (result !== null || naam == "" || naam == null) {
+    console.log("nee deel 1");
+  } else {
+    showQuestionsPage(); 
+    elem.innerHTML = "naam: " + naam;
+    console.log("door naar de vragen");
+    naamDisplay.style.display = "";
   }
 }
 
 // Initialize
 addButtonActions();
 showStartPage();
-login();
-
