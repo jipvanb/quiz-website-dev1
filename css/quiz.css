@@ -91,7 +91,7 @@ main {
   background-color: rgb(231, 224, 196);
 }
 
-#error {
+#error, #error2 {
   color: red;
 }
 

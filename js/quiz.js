@@ -276,6 +276,7 @@ function hideAllPages() {
   var questionsPage9 = document.getElementById("page-questions9");
   var questionsPage10 = document.getElementById("page-questions10");
   var error = document.getElementById("error");
+  var error2 = document.getElementById("error2");
 
   startPage.style.display = "none";
   loginPage.style.display = "none";
@@ -291,6 +292,7 @@ function hideAllPages() {
   questionsPage10.style.display = "none";
   endPage.style.display = "none";
   error.style.display = "none";
+  error2.style.display = "none";
 }
 
 /**
@@ -1738,12 +1740,14 @@ function move() {
 //login POGING 2
 function login() {
   var naam = document.getElementById("naam").value;
-  var patt = /\bs[s1234567890]/g;
+  var patt = /^s|[a-z]{2}[0-9]{7}/g;
   var result = naam.match(patt);
+  var error2 = document.getElementById("error2");
   console.log("naam: " + naam);
   console.log("result: " + result);
   if (result == null || naam == "" || naam == null) {
     console.log("nee deel 1");
+    error2.style.display = "";
   } else {
     checkStudent(naam);
     console.log("door naar de vragen");
