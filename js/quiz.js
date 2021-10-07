@@ -1808,14 +1808,22 @@ function sendScore() {
   xHttp.onreadystatechange = function () {
     if (xHttp.readyState == XMLHttpRequest.DONE) {
       var response = JSON.parse(xHttp.response);
+      if (xHttp.status == 200) {
       console.log(response);
-  }
+      }
+    }
 };
   xHttp.onerror = function () {
       console.log("error when sending score");
   };
-  xHttp.open("POST", "https://quiz.clow.nl/v1/score", "s1168975", "s1168975", 9);
-  xHttp.send();
+  xHttp.open("POST", "https://quiz.clow.nl/v1/score", true);
+  xHttp.send(
+    JSON.stringify({
+      quizMaster: "s1168975",
+      student: studentnumber,
+      points: count,
+    })
+  );
 }
 
 //get highscores from api
