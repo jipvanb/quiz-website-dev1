@@ -1,6 +1,8 @@
 "use strict";
 
 var studentnumber;
+const scoreSucc = document.getElementById("scoreSucc");
+const scoreFout = document.getElementById("scoreFout");
 
 /**
  * Add actions to page buttons
@@ -293,6 +295,8 @@ function hideAllPages() {
   endPage.style.display = "none";
   error.style.display = "none";
   error2.style.display = "none";
+  scoreSucc.style.display = "none";
+  scoreFout.style.display = "none";
 }
 
 /**
@@ -1810,6 +1814,12 @@ function sendScore() {
       var response = JSON.parse(xHttp.response);
       if (xHttp.status == 200) {
       console.log(response);
+      console.log("score is succesvol verstuurd");
+      scoreSucc.style.display = "";
+      }
+      else{
+        console.log("de score is niet verstuurd");
+        scoreFout.style.display = "";
       }
     }
 };
