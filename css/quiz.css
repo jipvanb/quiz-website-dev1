@@ -1,8 +1,4 @@
-/* Plaats je CSS-code in dit bestand */
-
 html {
-  /*background-color: #b1b3b3ff;*/
-  /*background-image: linear-gradient(whitesmoke, lightblue);*/
   background-image: url("../img/bg2.jpg");
   height: 100%;
   background-position: center;
@@ -16,11 +12,8 @@ header {
   border-width: 1px;
   border-style: solid;
   border-color: black;
-  /*display: flex;
-  align-items: center;*/
   border-radius: 25px;
   text-align: center;
-  /*background-color: rgba(255, 255, 255, 0.5);*/
   background-color: rgb(231, 224, 196);
 }
 
@@ -34,8 +27,6 @@ nav {
   border-width: 1px;
   border-style: solid;
   border-color: black;
-  /*display: flex;*/
-  /*align-items: center;*/
   border-radius: 25px;
   text-align: center;
   background-color: rgb(231, 224, 196);
@@ -46,11 +37,18 @@ main {
   border-width: 1px;
   border-style: solid;
   border-color: #000000ff;
-  /*display: flex;
-  align-items: center;*/
   border-radius: 25px;
   text-align: center;
   background-color: rgb(231, 224, 196);
+}
+
+button {
+  font-weight: bold;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
 }
 
 .live-score {
@@ -60,12 +58,6 @@ main {
   bottom: 15px;
   position: absolute;
   right: 39.8388%;
-  /*position: absolute;
-  align-items: center;
-  bottom: 0px;
-  width: 20%;
-  margin-left: 49%;
-  margin-right: 49%;*/
   border-width: 1px;
   border-style: solid;
   border-color: #000000ff;
@@ -78,30 +70,11 @@ main {
   position: absolute;
   width: fit-content;
   bottom: 15px;
-  /*position: absolute;
-  align-items: center;
-  bottom: 0px;
-  width: 20%;
-  margin-left: 49%;
-  margin-right: 49%;*/
   border-width: 1px;
   border-style: solid;
   border-color: #000000ff;
   border-radius: 25px;
   background-color: rgb(231, 224, 196);
-}
-
-#error, #error2, #scoreFout {
-  color: red;
-}
-
-#scoreSucc {
-  color: green;
-}
-
-ul {
-  text-align: center;
-  list-style-position: inside;
 }
 
 .grid-container {
@@ -114,21 +87,90 @@ ul {
   padding: 10px;
 }
 
-#page-start {
-  font-size: 19px;
-}
-
 .page-questions {
   margin-bottom: 47.61px;
   font-size: 19px;
 }
 
-#page-end {
-  margin-bottom: 24.06px;
+.button-ans,
+.button-next {
+  background-color: salmon;
+  border: none;
+  color: white;
+  padding: 13px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
-button {
-  font-weight: bold;
+.button-ans:hover,
+.button-next:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.score {
+  font-size: x-large;
+}
+
+.center {
+  text-align: center;
+}
+
+.testscript {
+  border-collapse: collapse;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.testscript th,
+.testscript td {
+  border: 1px solid #000000;
+  vertical-align: top;
+  padding: 5px 10px 5px 10px;
+}
+
+.testscript ul {
+  margin: 0;
+}
+
+.testscript li,
+.testscript span {
+  margin: 8px 0;
+}
+
+.testscript span {
+  display: block;
+  margin: 8px 0;
+}
+
+.documentation-link {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+#error, #error2, #scoreFout {
+  color: red;
+}
+
+#scoreSucc {
+  color: green;
+}
+
+#page-start {
+  font-size: 19px;
+}
+
+#page-end {
+  margin-bottom: 24.06px;
 }
 
 #button-start,
@@ -182,77 +224,12 @@ button {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.button-ans,
-.button-next {
-  background-color: salmon;
-  border: none;
-  color: white;
-  padding: 13px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.button-ans:hover,
-.button-next:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-.score {
-  font-size: x-large;
-}
-
 #documentation {
   background-color: cadetblue;
 }
 
 #images {
   text-align: center;
-}
-
-.center {
-  text-align: center;
-}
-
-.testscript {
-  border-collapse: collapse;
-  margin: 10px;
-  background-color: rgba(255, 255, 255, 0.7);
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-.testscript th,
-.testscript td {
-  border: 1px solid #000000;
-  vertical-align: top;
-  padding: 5px 10px 5px 10px;
-}
-
-.testscript ul {
-  margin: 0;
-}
-
-.testscript li,
-.testscript span {
-  margin: 8px 0;
-}
-
-.testscript span {
-  display: block;
-  margin: 8px 0;
-}
-
-.documentation-link {
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
 }
 
 #myProgress {

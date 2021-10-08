@@ -1,84 +1,124 @@
 "use strict";
 
-var studentnumber;
+//studentnumber for login
+let studentnumber;
+
+//score submission popups at endpage
 const scoreSucc = document.getElementById("scoreSucc");
 const scoreFout = document.getElementById("scoreFout");
+
+//all buttons
+//start
+const startButton = document.getElementById("button-start");
+const questionsButton = document.getElementById("button-questions");
+const loginButton = document.getElementById("submit");
+//Q1
+const ansButton1 = document.getElementById("button-ans1");
+const ansButton2 = document.getElementById("button-ans2");
+const ansButton3 = document.getElementById("button-ans3");
+const correctAnsButton = document.getElementById("button-correctans");
+const nextButton1 = document.getElementById("button-next");
+//Q2
+const ansButton22 = document.getElementById("button-ans2-2");
+const ansButton32 = document.getElementById("button-ans3-2");
+const ansButton12 = document.getElementById("button-ans1-2");
+const correctAnsButton2 = document.getElementById("button-correctans-2");
+const nextButton2 = document.getElementById("button-next-2");
+//Q3
+const ansButton13 = document.getElementById("button-ans1-3");
+const ansButton23 = document.getElementById("button-ans2-3");
+const ansButton33 = document.getElementById("button-ans3-3");
+const correctAnsButton3 = document.getElementById("button-correctans-3");
+const nextButton3 = document.getElementById("button-next-3");
+//Q4
+const ansButton14 = document.getElementById("button-ans1-4");
+const ansButton24 = document.getElementById("button-ans2-4");
+const ansButton34 = document.getElementById("button-ans3-4");
+const correctAnsButton4 = document.getElementById("button-correctans-4");
+const nextButton4 = document.getElementById("button-next-4");
+//Q5
+const ansButton15 = document.getElementById("button-ans1-5");
+const ansButton25 = document.getElementById("button-ans2-5");
+const ansButton35 = document.getElementById("button-ans3-5");
+const correctAnsButton5 = document.getElementById("button-correctans-5");
+const nextButton5 = document.getElementById("button-next-5");
+//Q6
+const ansButton16 = document.getElementById("button-ans1-6");
+const ansButton26 = document.getElementById("button-ans2-6");
+const ansButton36 = document.getElementById("button-ans3-6");
+const correctAnsButton6 = document.getElementById("button-correctans-6");
+const nextButton6 = document.getElementById("button-next-6");
+//Q7
+const ansButton17 = document.getElementById("button-ans1-7");
+const ansButton27 = document.getElementById("button-ans2-7");
+const ansButton37 = document.getElementById("button-ans3-7");
+const correctAnsButton7 = document.getElementById("button-correctans-7");
+const nextButton7 = document.getElementById("button-next-7");
+//Q8
+const ansButton18 = document.getElementById("button-ans1-8");
+const ansButton28 = document.getElementById("button-ans2-8");
+const ansButton38 = document.getElementById("button-ans3-8");
+const correctAnsButton8 = document.getElementById("button-correctans-8");
+const nextButton8 = document.getElementById("button-next-8");
+//Q9
+const ansButton19 = document.getElementById("button-ans1-9");
+const ansButton29 = document.getElementById("button-ans2-9");
+const ansButton39 = document.getElementById("button-ans3-9");
+const correctAnsButton9 = document.getElementById("button-correctans-9");
+const nextButton9 = document.getElementById("button-next-9");
+//Q10
+const ansButton110 = document.getElementById("button-ans1-10");
+const ansButton210 = document.getElementById("button-ans2-10");
+const ansButton310 = document.getElementById("button-ans3-10");
+const correctAnsButton10 = document.getElementById("button-correctans-10");
+const nextButton10 = document.getElementById("button-next-10");
+
+//all pages
+const startPage = document.getElementById("page-start");
+const endPage = document.getElementById("page-end");
+const loginPage = document.getElementById("page-login");
+const questionsPage = document.getElementById("page-questions");
+const questionsPage2 = document.getElementById("page-questions2");
+const questionsPage3 = document.getElementById("page-questions3");
+const questionsPage4 = document.getElementById("page-questions4");
+const questionsPage5 = document.getElementById("page-questions5");
+const questionsPage6 = document.getElementById("page-questions6");
+const questionsPage7 = document.getElementById("page-questions7");
+const questionsPage8 = document.getElementById("page-questions8");
+const questionsPage9 = document.getElementById("page-questions9");
+const questionsPage10 = document.getElementById("page-questions10");
+const error = document.getElementById("error");
+const error2 = document.getElementById("error2");
+
+//Next buttons
+const buttonNext1 = document.getElementById("button-next");
+const buttonNext2 = document.getElementById("button-next-2");
+const buttonNext3 = document.getElementById("button-next-3");
+const buttonNext4 = document.getElementById("button-next-4");
+const buttonNext5 = document.getElementById("button-next-5");
+const buttonNext6 = document.getElementById("button-next-6");
+const buttonNext7 = document.getElementById("button-next-7");
+const buttonNext8 = document.getElementById("button-next-8");
+const buttonNext9 = document.getElementById("button-next-9");
+const buttonNext10 = document.getElementById("button-next-10");
+
+//extra counters
+const naam = document.getElementById("naam-display");
+const counter = document.getElementById("live-score");
+let counterDisplayElem = document.getElementById("counter-display");
+let count = 0;
+
 
 /**
  * Add actions to page buttons
  */
 function addButtonActions() {
   //start
-  var startButton = document.getElementById("button-start");
-  var questionsButton = document.getElementById("button-questions");
-  var loginButton = document.getElementById("submit");
-  //Q1
-  var ansButton1 = document.getElementById("button-ans1");
-  var ansButton2 = document.getElementById("button-ans2");
-  var ansButton3 = document.getElementById("button-ans3");
-  var correctAnsButton = document.getElementById("button-correctans");
-  var nextButton1 = document.getElementById("button-next");
-  //Q2
-  var ansButton12 = document.getElementById("button-ans1-2");
-  var ansButton22 = document.getElementById("button-ans2-2");
-  var ansButton32 = document.getElementById("button-ans3-2");
-  var correctAnsButton2 = document.getElementById("button-correctans-2");
-  var nextButton2 = document.getElementById("button-next-2");
-  //Q3
-  var ansButton13 = document.getElementById("button-ans1-3");
-  var ansButton23 = document.getElementById("button-ans2-3");
-  var ansButton33 = document.getElementById("button-ans3-3");
-  var correctAnsButton3 = document.getElementById("button-correctans-3");
-  var nextButton3 = document.getElementById("button-next-3");
-  //Q4
-  var ansButton14 = document.getElementById("button-ans1-4");
-  var ansButton24 = document.getElementById("button-ans2-4");
-  var ansButton34 = document.getElementById("button-ans3-4");
-  var correctAnsButton4 = document.getElementById("button-correctans-4");
-  var nextButton4 = document.getElementById("button-next-4");
-  //Q5
-  var ansButton15 = document.getElementById("button-ans1-5");
-  var ansButton25 = document.getElementById("button-ans2-5");
-  var ansButton35 = document.getElementById("button-ans3-5");
-  var correctAnsButton5 = document.getElementById("button-correctans-5");
-  var nextButton5 = document.getElementById("button-next-5");
-  //Q6
-  var ansButton16 = document.getElementById("button-ans1-6");
-  var ansButton26 = document.getElementById("button-ans2-6");
-  var ansButton36 = document.getElementById("button-ans3-6");
-  var correctAnsButton6 = document.getElementById("button-correctans-6");
-  var nextButton6 = document.getElementById("button-next-6");
-  //Q7
-  var ansButton17 = document.getElementById("button-ans1-7");
-  var ansButton27 = document.getElementById("button-ans2-7");
-  var ansButton37 = document.getElementById("button-ans3-7");
-  var correctAnsButton7 = document.getElementById("button-correctans-7");
-  var nextButton7 = document.getElementById("button-next-7");
-  //Q8
-  var ansButton18 = document.getElementById("button-ans1-8");
-  var ansButton28 = document.getElementById("button-ans2-8");
-  var ansButton38 = document.getElementById("button-ans3-8");
-  var correctAnsButton8 = document.getElementById("button-correctans-8");
-  var nextButton8 = document.getElementById("button-next-8");
-  //Q9
-  var ansButton19 = document.getElementById("button-ans1-9");
-  var ansButton29 = document.getElementById("button-ans2-9");
-  var ansButton39 = document.getElementById("button-ans3-9");
-  var correctAnsButton9 = document.getElementById("button-correctans-9");
-  var nextButton9 = document.getElementById("button-next-9");
-  //Q10
-  var ansButton110 = document.getElementById("button-ans1-10");
-  var ansButton210 = document.getElementById("button-ans2-10");
-  var ansButton310 = document.getElementById("button-ans3-10");
-  var correctAnsButton10 = document.getElementById("button-correctans-10");
-  var nextButton10 = document.getElementById("button-next-10");
-
-  //start
   startButton.addEventListener("click", function () {
     showStartPage();
   });
   questionsButton.addEventListener("click", function () {
-    showLoginPage();
+    showPage("page-login");
   });
   loginButton.addEventListener("click", function () {
     login();
@@ -86,7 +126,7 @@ function addButtonActions() {
 
   //Q1
   correctAnsButton.addEventListener("click", function () {
-    anscorrect();
+    ansButton(nextButton1, ansButton1, ansButton2, ansButton3, correctAnsButton);
   });
   ansButton1.addEventListener("click", function () {
     answrong1();
@@ -98,7 +138,7 @@ function addButtonActions() {
     answrong3();
   });
   nextButton1.addEventListener("click", function () {
-    showQuestionsPage2();
+    showPage("page-questions2");
   });
 
   //Q2
@@ -115,7 +155,7 @@ function addButtonActions() {
     answrong32();
   });
   nextButton2.addEventListener("click", function () {
-    showQuestionsPage3();
+    showPage("page-questions3");
   });
 
   //Q3
@@ -132,7 +172,7 @@ function addButtonActions() {
     answrong33();
   });
   nextButton3.addEventListener("click", function () {
-    showQuestionsPage4();
+    showPage("page-questions4");
   });
 
   //Q4
@@ -149,7 +189,7 @@ function addButtonActions() {
     answrong34();
   });
   nextButton4.addEventListener("click", function () {
-    showQuestionsPage5();
+    showPage("page-questions5");
   });
 
   //Q5
@@ -166,7 +206,7 @@ function addButtonActions() {
     answrong35();
   });
   nextButton5.addEventListener("click", function () {
-    showQuestionsPage6();
+    showPage("page-questions6");
   });
 
   //Q6
@@ -183,7 +223,7 @@ function addButtonActions() {
     answrong36();
   });
   nextButton6.addEventListener("click", function () {
-    showQuestionsPage7();
+    showPage("page-questions7");
   });
 
   //Q7
@@ -200,7 +240,7 @@ function addButtonActions() {
     answrong37();
   });
   nextButton7.addEventListener("click", function () {
-    showQuestionsPage8();
+    showPage("page-questions8");
   });
 
   //Q8
@@ -217,7 +257,7 @@ function addButtonActions() {
     answrong38();
   });
   nextButton8.addEventListener("click", function () {
-    showQuestionsPage9();
+    showPage("page-questions9");
   });
 
   //Q9
@@ -234,7 +274,7 @@ function addButtonActions() {
     answrong39();
   });
   nextButton9.addEventListener("click", function () {
-    showQuestionsPage10();
+    showPage("page-questions10");
   });
 
   //Q10
@@ -255,31 +295,13 @@ function addButtonActions() {
   });
 
   //Start end bar animation
-  nextButton10.addEventListener("click", function () {
-    move();
-  });
+  nextButton10.addEventListener("click", move);
 }
 
 /**
  * Hide all pages
  */
 function hideAllPages() {
-  var startPage = document.getElementById("page-start");
-  var endPage = document.getElementById("page-end");
-  var loginPage = document.getElementById("page-login");
-  var questionsPage = document.getElementById("page-questions");
-  var questionsPage2 = document.getElementById("page-questions2");
-  var questionsPage3 = document.getElementById("page-questions3");
-  var questionsPage4 = document.getElementById("page-questions4");
-  var questionsPage5 = document.getElementById("page-questions5");
-  var questionsPage6 = document.getElementById("page-questions6");
-  var questionsPage7 = document.getElementById("page-questions7");
-  var questionsPage8 = document.getElementById("page-questions8");
-  var questionsPage9 = document.getElementById("page-questions9");
-  var questionsPage10 = document.getElementById("page-questions10");
-  var error = document.getElementById("error");
-  var error2 = document.getElementById("error2");
-
   startPage.style.display = "none";
   loginPage.style.display = "none";
   questionsPage.style.display = "none";
@@ -303,76 +325,10 @@ function hideAllPages() {
  * Show start page & reset buttons and score
  */
 function showStartPage() {
-  //Page
-  var page = document.getElementById("page-start");
-  //Next buttons
-  var buttonNext1 = document.getElementById("button-next");
-  var buttonNext2 = document.getElementById("button-next-2");
-  var buttonNext3 = document.getElementById("button-next-3");
-  var buttonNext4 = document.getElementById("button-next-4");
-  var buttonNext5 = document.getElementById("button-next-5");
-  var buttonNext6 = document.getElementById("button-next-6");
-  var buttonNext7 = document.getElementById("button-next-7");
-  var buttonNext8 = document.getElementById("button-next-8");
-  var buttonNext9 = document.getElementById("button-next-9");
-  var buttonNext10 = document.getElementById("button-next-10");
-  var naam = document.getElementById("naam-display");
-  
   naam.style.display = "none";
-  //Q1
-  var correctAnsButton = document.getElementById("button-correctans");
-  var ansButton1 = document.getElementById("button-ans1");
-  var ansButton2 = document.getElementById("button-ans2");
-  var ansButton3 = document.getElementById("button-ans3");
-  //Q2
-  var correctAnsButton2 = document.getElementById("button-correctans-2");
-  var ansButton12 = document.getElementById("button-ans1-2");
-  var ansButton22 = document.getElementById("button-ans2-2");
-  var ansButton32 = document.getElementById("button-ans3-2");
-  //Q3
-  var correctAnsButton3 = document.getElementById("button-correctans-3");
-  var ansButton13 = document.getElementById("button-ans1-3");
-  var ansButton23 = document.getElementById("button-ans2-3");
-  var ansButton33 = document.getElementById("button-ans3-3");
-  //Q4
-  var correctAnsButton4 = document.getElementById("button-correctans-4");
-  var ansButton14 = document.getElementById("button-ans1-4");
-  var ansButton24 = document.getElementById("button-ans2-4");
-  var ansButton34 = document.getElementById("button-ans3-4");
-  //Q5
-  var correctAnsButton5 = document.getElementById("button-correctans-5");
-  var ansButton15 = document.getElementById("button-ans1-5");
-  var ansButton25 = document.getElementById("button-ans2-5");
-  var ansButton35 = document.getElementById("button-ans3-5");
-  //Q6
-  var correctAnsButton6 = document.getElementById("button-correctans-6");
-  var ansButton16 = document.getElementById("button-ans1-6");
-  var ansButton26 = document.getElementById("button-ans2-6");
-  var ansButton36 = document.getElementById("button-ans3-6");
-  //Q7
-  var correctAnsButton7 = document.getElementById("button-correctans-7");
-  var ansButton17 = document.getElementById("button-ans1-7");
-  var ansButton27 = document.getElementById("button-ans2-7");
-  var ansButton37 = document.getElementById("button-ans3-7");
-  //Q8
-  var correctAnsButton8 = document.getElementById("button-correctans-8");
-  var ansButton18 = document.getElementById("button-ans1-8");
-  var ansButton28 = document.getElementById("button-ans2-8");
-  var ansButton38 = document.getElementById("button-ans3-8");
-  //Q9
-  var correctAnsButton9 = document.getElementById("button-correctans-9");
-  var ansButton19 = document.getElementById("button-ans1-9");
-  var ansButton29 = document.getElementById("button-ans2-9");
-  var ansButton39 = document.getElementById("button-ans3-9");
-  //Q10
-  var correctAnsButton10 = document.getElementById("button-correctans-10");
-  var ansButton110 = document.getElementById("button-ans1-10");
-  var ansButton210 = document.getElementById("button-ans2-10");
-  var ansButton310 = document.getElementById("button-ans3-10");
   //Reset score
   count = 0;
   updateDisplay();
-  var counter = document.getElementById("live-score");
 
   hideAllPages();
 
@@ -493,7 +449,7 @@ function showStartPage() {
   buttonNext10.style.display = "none";
 
   //Display page (start page)
-  page.style.display = "block";
+  startPage.style.display = "block";
 
   //Enable all Q buttons on start
   //Q1
@@ -553,146 +509,16 @@ function showStartPage() {
 }
 
 /**
- * Show login page
+ * Show any page
  */
- function showLoginPage() {
-  var page = document.getElementById("page-login");
+ function showPage(pagename) {
+  var page = document.getElementById(pagename);
 
   hideAllPages();
 
   page.style.display = "block";
 
-  console.info("Je bent nu op de loginpagina");
-}
-
-/**
- * Show questions page 1
- */
-function showQuestionsPage() {
-  var page = document.getElementById("page-questions");
-
-  hideAllPages();
-
-  page.style.display = "block";
-
-  console.info("Je bent nu op de vragenpagina");
-}
-
-/**
- * Show questions page 2
- */
-function showQuestionsPage2() {
-  var page = document.getElementById("page-questions2");
-
-  hideAllPages();
-
-  page.style.display = "block";
-
-  console.info("Je bent nu op de vragenpagina deel 2");
-}
-
-/**
- * Show questions page 3
- */
-function showQuestionsPage3() {
-  var page = document.getElementById("page-questions3");
-
-  hideAllPages();
-
-  page.style.display = "block";
-
-  console.info("Je bent nu op de vragenpagina deel 3");
-}
-
-/**
- * Show questions page 4
- */
-function showQuestionsPage4() {
-  var page = document.getElementById("page-questions4");
-
-  hideAllPages();
-
-  page.style.display = "block";
-
-  console.info("Je bent nu op de vragenpagina deel 4");
-}
-
-/**
- * Show questions page 5
- */
-function showQuestionsPage5() {
-  var page = document.getElementById("page-questions5");
-
-  hideAllPages();
-
-  page.style.display = "block";
-
-  console.info("Je bent nu op de vragenpagina deel 5");
-}
-
-/**
- * Show questions page 6
- */
-function showQuestionsPage6() {
-  var page = document.getElementById("page-questions6");
-
-  hideAllPages();
-
-  page.style.display = "block";
-
-  console.info("Je bent nu op de vragenpagina deel 6");
-}
-
-/**
- * Show questions page 7
- */
-function showQuestionsPage7() {
-  var page = document.getElementById("page-questions7");
-
-  hideAllPages();
-
-  page.style.display = "block";
-
-  console.info("Je bent nu op de vragenpagina deel 7");
-}
-
-/**
- * Show questions page 8
- */
-function showQuestionsPage8() {
-  var page = document.getElementById("page-questions8");
-
-  hideAllPages();
-
-  page.style.display = "block";
-
-  console.info("Je bent nu op de vragenpagina deel 8");
-}
-
-/**
- * Show questions page 9
- */
-function showQuestionsPage9() {
-  var page = document.getElementById("page-questions9");
-
-  hideAllPages();
-
-  page.style.display = "block";
-
-  console.info("Je bent nu op de vragenpagina deel 9");
-}
-
-/**
- * Show questions page 10
- */
-function showQuestionsPage10() {
-  var page = document.getElementById("page-questions10");
-
-  hideAllPages();
-
-  page.style.display = "block";
-
-  console.info("Je bent nu op de vragenpagina deel 10");
+  console.info("Je bent nu op " + pagename);
 }
 
 /**
@@ -707,6 +533,24 @@ function showEndPage() {
 
   console.info("Je bent nu bij het einde");
   sendScore();
+}
+
+/**
+ * ans button any test
+ */
+ function ansButton(buttonNext, ansButton1, ansButton2, ansButton3, correctAnsButton) {
+  correctAnsButton.style.backgroundColor = "green";
+  buttonNext.style.display = "";
+  console.info("correct");
+  correctAnsButton.disabled = true;
+  ansButton1.disabled = true;
+  ansButton2.disabled = true;
+  ansButton3.disabled = true;
+  correctAnsButton.style.cursor = "not-allowed";
+  ansButton1.style.cursor = "not-allowed";
+  ansButton2.style.cursor = "not-allowed";
+  ansButton3.style.cursor = "not-allowed";
+  addScore();
 }
 
 /**
@@ -1702,9 +1546,6 @@ function answrong310() {
 /**
  * Score counter
  */
-var counterDisplayElem = document.getElementById("counter-display");
-var count = 0;
-
 updateDisplay();
 
 function addScore() {
@@ -1746,7 +1587,6 @@ function login() {
   var naam = document.getElementById("naam").value;
   var patt = /(^s|[a-z]{2})(?=\d{7}$)/;
   var result = naam.match(patt);
-  var error2 = document.getElementById("error2");
   console.log("naam: " + naam);
   console.log("result: " + result);
   if (result == null || naam == "" || naam == null) {
@@ -1789,7 +1629,7 @@ function studentIdentificationSucces(student) {
   var elem = document.getElementById("naam-display-display");
   var naamDisplay = document.getElementById("naam-display");
   elem.innerHTML = "Naam: " + student.firstName + " " + student.lastName;
-  showQuestionsPage(); 
+  showPage("page-questions"); 
   console.log("succesinlog");
   naamDisplay.style.display = "";
   // Schrijf hier de code die uitgevoerd moet worden als het studentnummer klopt
@@ -1799,7 +1639,6 @@ function studentIdentificationSucces(student) {
 * Student number is incorrect
 */
 function studentIdentificationFailed(errorMessage) {
-  var error = document.getElementById("error");
   error.style.display = "";
   console.error(errorMessage);
   console.log("nee error");
