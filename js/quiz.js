@@ -1740,7 +1740,7 @@ function move() {
 //login POGING 2
 function login() {
   var naam = document.getElementById("naam").value;
-  var patt = /^s|[a-z]{2}[0-9]{7}/g;
+  var patt = /(^s|[a-z]{2})(?=\d{7}$)/;
   var result = naam.match(patt);
   var error2 = document.getElementById("error2");
   console.log("naam: " + naam);
