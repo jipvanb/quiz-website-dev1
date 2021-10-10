@@ -126,16 +126,16 @@ function addButtonActions() {
 
   //Q1
   correctAnsButton.addEventListener("click", function () {
-    ansButton(nextButton1, ansButton1, ansButton2, ansButton3, correctAnsButton);
+    ansButton(nextButton1, ansButton1, ansButton2, ansButton3, correctAnsButton, true);
   });
   ansButton1.addEventListener("click", function () {
-    answrong1();
+    ansButton(nextButton1, ansButton1, ansButton2, ansButton3, correctAnsButton, false);
   });
   ansButton2.addEventListener("click", function () {
-    answrong2();
+    ansButton(nextButton1, ansButton2, ansButton1, ansButton3, correctAnsButton, false);
   });
   ansButton3.addEventListener("click", function () {
-    answrong3();
+    ansButton(nextButton1, ansButton3, ansButton2, ansButton1, correctAnsButton, false);
   });
   nextButton1.addEventListener("click", function () {
     showPage("page-questions2");
@@ -143,16 +143,16 @@ function addButtonActions() {
 
   //Q2
   correctAnsButton2.addEventListener("click", function () {
-    anscorrect2();
+    ansButton(nextButton2, ansButton12, ansButton22, ansButton32, correctAnsButton2, true);
   });
   ansButton12.addEventListener("click", function () {
-    answrong12();
+    ansButton(nextButton2, ansButton12, ansButton22, ansButton32, correctAnsButton2, false);
   });
   ansButton22.addEventListener("click", function () {
-    answrong22();
+    ansButton(nextButton2, ansButton22, ansButton12, ansButton32, correctAnsButton2, false);
   });
   ansButton32.addEventListener("click", function () {
-    answrong32();
+    ansButton(nextButton2, ansButton32, ansButton22, ansButton12, correctAnsButton2, false);
   });
   nextButton2.addEventListener("click", function () {
     showPage("page-questions3");
@@ -160,16 +160,16 @@ function addButtonActions() {
 
   //Q3
   correctAnsButton3.addEventListener("click", function () {
-    anscorrect3();
+    ansButton(nextButton3, ansButton13, ansButton23, ansButton33, correctAnsButton3, true);
   });
   ansButton13.addEventListener("click", function () {
-    answrong13();
+    ansButton(nextButton3, ansButton13, ansButton23, ansButton33, correctAnsButton3, false);
   });
   ansButton23.addEventListener("click", function () {
-    answrong23();
+    ansButton(nextButton3, ansButton23, ansButton13, ansButton33, correctAnsButton3, false);
   });
   ansButton33.addEventListener("click", function () {
-    answrong33();
+    ansButton(nextButton3, ansButton33, ansButton23, ansButton13, correctAnsButton3, false);
   });
   nextButton3.addEventListener("click", function () {
     showPage("page-questions4");
@@ -177,16 +177,16 @@ function addButtonActions() {
 
   //Q4
   correctAnsButton4.addEventListener("click", function () {
-    anscorrect4();
+    ansButton(nextButton4, ansButton14, ansButton24, ansButton34, correctAnsButton4, true);
   });
   ansButton14.addEventListener("click", function () {
-    answrong14();
+    ansButton(nextButton4, ansButton14, ansButton24, ansButton34, correctAnsButton4, false);
   });
   ansButton24.addEventListener("click", function () {
-    answrong24();
+    ansButton(nextButton4, ansButton24, ansButton14, ansButton34, correctAnsButton4, false);
   });
   ansButton34.addEventListener("click", function () {
-    answrong34();
+    ansButton(nextButton4, ansButton34, ansButton24, ansButton14, correctAnsButton4, false);
   });
   nextButton4.addEventListener("click", function () {
     showPage("page-questions5");
@@ -194,16 +194,16 @@ function addButtonActions() {
 
   //Q5
   correctAnsButton5.addEventListener("click", function () {
-    anscorrect5();
+    ansButton(nextButton5, ansButton15, ansButton25, ansButton35, correctAnsButton5, true);
   });
   ansButton15.addEventListener("click", function () {
-    answrong15();
+    ansButton(nextButton5, ansButton15, ansButton25, ansButton35, correctAnsButton5, false);
   });
   ansButton25.addEventListener("click", function () {
-    answrong25();
+    ansButton(nextButton5, ansButton25, ansButton15, ansButton35, correctAnsButton5, false);
   });
   ansButton35.addEventListener("click", function () {
-    answrong35();
+    ansButton(nextButton5, ansButton35, ansButton25, ansButton15, correctAnsButton5, false);
   });
   nextButton5.addEventListener("click", function () {
     showPage("page-questions6");
@@ -211,16 +211,16 @@ function addButtonActions() {
 
   //Q6
   correctAnsButton6.addEventListener("click", function () {
-    anscorrect6();
+    ansButton(nextButton6, ansButton16, ansButton26, ansButton36, correctAnsButton6, true);
   });
   ansButton16.addEventListener("click", function () {
-    answrong16();
+    ansButton(nextButton6, ansButton16, ansButton26, ansButton36, correctAnsButton6, false);
   });
   ansButton26.addEventListener("click", function () {
-    answrong26();
+    ansButton(nextButton6, ansButton26, ansButton16, ansButton36, correctAnsButton6, false);
   });
   ansButton36.addEventListener("click", function () {
-    answrong36();
+    ansButton(nextButton6, ansButton36, ansButton26, ansButton16, correctAnsButton6, false);
   });
   nextButton6.addEventListener("click", function () {
     showPage("page-questions7");
@@ -228,16 +228,16 @@ function addButtonActions() {
 
   //Q7
   correctAnsButton7.addEventListener("click", function () {
-    anscorrect7();
+    ansButton(nextButton7, ansButton17, ansButton27, ansButton37, correctAnsButton7, true);
   });
   ansButton17.addEventListener("click", function () {
-    answrong17();
+    ansButton(nextButton7, ansButton17, ansButton27, ansButton37, correctAnsButton7, false);
   });
   ansButton27.addEventListener("click", function () {
-    answrong27();
+    ansButton(nextButton7, ansButton27, ansButton17, ansButton37, correctAnsButton7, false);
   });
   ansButton37.addEventListener("click", function () {
-    answrong37();
+    ansButton(nextButton7, ansButton37, ansButton27, ansButton17, correctAnsButton7, false);
   });
   nextButton7.addEventListener("click", function () {
     showPage("page-questions8");
@@ -245,16 +245,16 @@ function addButtonActions() {
 
   //Q8
   correctAnsButton8.addEventListener("click", function () {
-    anscorrect8();
+    ansButton(nextButton8, ansButton18, ansButton28, ansButton38, correctAnsButton8, true);
   });
   ansButton18.addEventListener("click", function () {
-    answrong18();
+    ansButton(nextButton8, ansButton18, ansButton28, ansButton38, correctAnsButton8, false);
   });
   ansButton28.addEventListener("click", function () {
-    answrong28();
+    ansButton(nextButton8, ansButton28, ansButton18, ansButton38, correctAnsButton8, false);
   });
   ansButton38.addEventListener("click", function () {
-    answrong38();
+    ansButton(nextButton8, ansButton38, ansButton28, ansButton18, correctAnsButton8, false);
   });
   nextButton8.addEventListener("click", function () {
     showPage("page-questions9");
@@ -262,16 +262,16 @@ function addButtonActions() {
 
   //Q9
   correctAnsButton9.addEventListener("click", function () {
-    anscorrect9();
+    ansButton(nextButton9, ansButton19, ansButton29, ansButton39, correctAnsButton9, true);
   });
   ansButton19.addEventListener("click", function () {
-    answrong19();
+    ansButton(nextButton9, ansButton19, ansButton29, ansButton39, correctAnsButton9, false);
   });
   ansButton29.addEventListener("click", function () {
-    answrong29();
+    ansButton(nextButton9, ansButton29, ansButton19, ansButton39, correctAnsButton9, false);
   });
   ansButton39.addEventListener("click", function () {
-    answrong39();
+    ansButton(nextButton9, ansButton39, ansButton29, ansButton19, correctAnsButton9, false);
   });
   nextButton9.addEventListener("click", function () {
     showPage("page-questions10");
@@ -279,23 +279,20 @@ function addButtonActions() {
 
   //Q10
   correctAnsButton10.addEventListener("click", function () {
-    anscorrect10();
+    ansButton(nextButton10, ansButton110, ansButton210, ansButton310, correctAnsButton10, true);
   });
   ansButton110.addEventListener("click", function () {
-    answrong110();
+    ansButton(nextButton10, ansButton110, ansButton210, ansButton310, correctAnsButton10, false);
   });
   ansButton210.addEventListener("click", function () {
-    answrong210();
+    ansButton(nextButton10, ansButton210, ansButton110, ansButton310, correctAnsButton10, false);
   });
   ansButton310.addEventListener("click", function () {
-    answrong310();
+    ansButton(nextButton10, ansButton310, ansButton210, ansButton110, correctAnsButton10, false);
   });
   nextButton10.addEventListener("click", function () {
     showEndPage();
   });
-
-  //Start end bar animation
-  nextButton10.addEventListener("click", move);
 }
 
 /**
@@ -509,7 +506,7 @@ function showStartPage() {
 }
 
 /**
- * Show any page
+ * Show page
  */
  function showPage(pagename) {
   var page = document.getElementById(pagename);
@@ -533,1021 +530,36 @@ function showEndPage() {
 
   console.info("Je bent nu bij het einde");
   sendScore();
+  moveProgressBar();
 }
 
 /**
- * ans button any test
+ * ans button
  */
- function ansButton(buttonNext, ansButton1, ansButton2, ansButton3, correctAnsButton) {
-  correctAnsButton.style.backgroundColor = "green";
+ function ansButton(buttonNext, clickedButton, ansButton2, ansButton3, correctAnsButton, correct) {
+  if (correct) {
+    correctAnsButton.style.backgroundColor = "green";
+    console.log("correct")
+    addScore();
+  }
+  else {
+    clickedButton.style.backgroundColor = "red";
+    console.log("wrong")
+  }
   buttonNext.style.display = "";
-  console.info("correct");
   correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
+  clickedButton.disabled = true;
   ansButton2.disabled = true;
   ansButton3.disabled = true;
   correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
+  clickedButton.style.cursor = "not-allowed";
   ansButton2.style.cursor = "not-allowed";
   ansButton3.style.cursor = "not-allowed";
-  addScore();
-}
-
-/**
- * correct ans button 1
- */
-function anscorrect() {
-  var buttonNext = document.getElementById("button-next");
-  var ansButton1 = document.getElementById("button-ans1");
-  var ansButton2 = document.getElementById("button-ans2");
-  var ansButton3 = document.getElementById("button-ans3");
-  var correctAnsButton = document.getElementById("button-correctans");
-
-  correctAnsButton.style.backgroundColor = "green";
-  buttonNext.style.display = "";
-  console.info("correct");
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-  addScore();
-}
-
-/**
- * wrong ans 1 button
- */
-function answrong1() {
-  var buttonNext = document.getElementById("button-next");
-  var ansButton1 = document.getElementById("button-ans1");
-  var ansButton2 = document.getElementById("button-ans2");
-  var ansButton3 = document.getElementById("button-ans3");
-  var correctAnsButton = document.getElementById("button-correctans");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton1.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("1 was wrong");
-}
-
-/**
- * wrong ans 2 button
- */
-function answrong2() {
-  var ansButton1 = document.getElementById("button-ans1");
-  var ansButton2 = document.getElementById("button-ans2");
-  var ansButton3 = document.getElementById("button-ans3");
-  var correctAnsButton = document.getElementById("button-correctans");
-  var buttonNext = document.getElementById("button-next");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton2.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("2 was wrong");
-}
-
-/**
- * wrong ans 3 button
- */
-function answrong3() {
-  var ansButton1 = document.getElementById("button-ans1");
-  var ansButton2 = document.getElementById("button-ans2");
-  var ansButton3 = document.getElementById("button-ans3");
-  var correctAnsButton = document.getElementById("button-correctans");
-  var buttonNext = document.getElementById("button-next");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton3.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("3 was wrong");
-}
-
-/**
- * correct ans button 2
- */
-function anscorrect2() {
-  var buttonNext = document.getElementById("button-next-2");
-  var ansButton1 = document.getElementById("button-ans1-2");
-  var ansButton2 = document.getElementById("button-ans2-2");
-  var ansButton3 = document.getElementById("button-ans3-2");
-  var correctAnsButton = document.getElementById("button-correctans-2");
-
-  correctAnsButton.style.backgroundColor = "green";
-  buttonNext.style.display = "";
-  console.info("correct");
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-  addScore();
-}
-
-/**
- * wrong ans 1 button 2
- */
-function answrong12() {
-  var buttonNext = document.getElementById("button-next-2");
-  var ansButton1 = document.getElementById("button-ans1-2");
-  var ansButton2 = document.getElementById("button-ans2-2");
-  var ansButton3 = document.getElementById("button-ans3-2");
-  var correctAnsButton = document.getElementById("button-correctans-2");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton1.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("1 was wrong");
-}
-
-/**
- * wrong ans 2 button 2
- */
-function answrong22() {
-  var ansButton1 = document.getElementById("button-ans1-2");
-  var ansButton2 = document.getElementById("button-ans2-2");
-  var ansButton3 = document.getElementById("button-ans3-2");
-  var correctAnsButton = document.getElementById("button-correctans-2");
-  var buttonNext = document.getElementById("button-next-2");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton2.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("2 was wrong");
-}
-
-/**
- * wrong ans 3 button 2
- */
-function answrong32() {
-  var ansButton1 = document.getElementById("button-ans1-2");
-  var ansButton2 = document.getElementById("button-ans2-2");
-  var ansButton3 = document.getElementById("button-ans3-2");
-  var correctAnsButton = document.getElementById("button-correctans-2");
-  var buttonNext = document.getElementById("button-next-2");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton3.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("3 was wrong");
-}
-
-/**
- * correct ans button 3
- */
-function anscorrect3() {
-  var buttonNext = document.getElementById("button-next-3");
-  var ansButton1 = document.getElementById("button-ans1-3");
-  var ansButton2 = document.getElementById("button-ans2-3");
-  var ansButton3 = document.getElementById("button-ans3-3");
-  var correctAnsButton = document.getElementById("button-correctans-3");
-
-  correctAnsButton.style.backgroundColor = "green";
-  buttonNext.style.display = "";
-  console.info("correct");
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-  addScore();
-}
-
-/**
- * wrong ans 1 button 3
- */
-function answrong13() {
-  var buttonNext = document.getElementById("button-next-3");
-  var ansButton1 = document.getElementById("button-ans1-3");
-  var ansButton2 = document.getElementById("button-ans2-3");
-  var ansButton3 = document.getElementById("button-ans3-3");
-  var correctAnsButton = document.getElementById("button-correctans-3");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton1.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("1 was wrong");
-}
-
-/**
- * wrong ans 2 button 3
- */
-function answrong23() {
-  var ansButton1 = document.getElementById("button-ans1-3");
-  var ansButton2 = document.getElementById("button-ans2-3");
-  var ansButton3 = document.getElementById("button-ans3-3");
-  var correctAnsButton = document.getElementById("button-correctans-3");
-  var buttonNext = document.getElementById("button-next-3");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton2.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("2 was wrong");
-}
-
-/**
- * wrong ans 3 button 3
- */
-function answrong33() {
-  var ansButton1 = document.getElementById("button-ans1-3");
-  var ansButton2 = document.getElementById("button-ans2-3");
-  var ansButton3 = document.getElementById("button-ans3-3");
-  var correctAnsButton = document.getElementById("button-correctans-3");
-  var buttonNext = document.getElementById("button-next-3");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton3.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("3 was wrong");
-}
-
-/**
- * correct ans button 4
- */
-function anscorrect4() {
-  var buttonNext = document.getElementById("button-next-4");
-  var ansButton1 = document.getElementById("button-ans1-4");
-  var ansButton2 = document.getElementById("button-ans2-4");
-  var ansButton3 = document.getElementById("button-ans3-4");
-  var correctAnsButton = document.getElementById("button-correctans-4");
-
-  correctAnsButton.style.backgroundColor = "green";
-  buttonNext.style.display = "";
-  console.info("correct");
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-  addScore();
-}
-
-/**
- * wrong ans 1 button 4
- */
-function answrong14() {
-  var buttonNext = document.getElementById("button-next-4");
-  var ansButton1 = document.getElementById("button-ans1-4");
-  var ansButton2 = document.getElementById("button-ans2-4");
-  var ansButton3 = document.getElementById("button-ans3-4");
-  var correctAnsButton = document.getElementById("button-correctans-4");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton1.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("1 was wrong");
-}
-
-/**
- * wrong ans 2 button 4
- */
-function answrong24() {
-  var ansButton1 = document.getElementById("button-ans1-4");
-  var ansButton2 = document.getElementById("button-ans2-4");
-  var ansButton3 = document.getElementById("button-ans3-4");
-  var correctAnsButton = document.getElementById("button-correctans-4");
-  var buttonNext = document.getElementById("button-next-4");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton2.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("2 was wrong");
-}
-
-/**
- * wrong ans 3 button 4
- */
-function answrong34() {
-  var ansButton1 = document.getElementById("button-ans1-4");
-  var ansButton2 = document.getElementById("button-ans2-4");
-  var ansButton3 = document.getElementById("button-ans3-4");
-  var correctAnsButton = document.getElementById("button-correctans-4");
-  var buttonNext = document.getElementById("button-next-4");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton3.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("3 was wrong");
-}
-
-/**
- * correct ans button 5
- */
-function anscorrect5() {
-  var buttonNext = document.getElementById("button-next-5");
-  var ansButton1 = document.getElementById("button-ans1-5");
-  var ansButton2 = document.getElementById("button-ans2-5");
-  var ansButton3 = document.getElementById("button-ans3-5");
-  var correctAnsButton = document.getElementById("button-correctans-5");
-
-  correctAnsButton.style.backgroundColor = "green";
-  buttonNext.style.display = "";
-  console.info("correct");
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-  addScore();
-}
-
-/**
- * wrong ans 1 button 5
- */
-function answrong15() {
-  var buttonNext = document.getElementById("button-next-5");
-  var ansButton1 = document.getElementById("button-ans1-5");
-  var ansButton2 = document.getElementById("button-ans2-5");
-  var ansButton3 = document.getElementById("button-ans3-5");
-  var correctAnsButton = document.getElementById("button-correctans-5");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton1.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("1 was wrong");
-}
-
-/**
- * wrong ans 2 button 5
- */
-function answrong25() {
-  var ansButton1 = document.getElementById("button-ans1-5");
-  var ansButton2 = document.getElementById("button-ans2-5");
-  var ansButton3 = document.getElementById("button-ans3-5");
-  var correctAnsButton = document.getElementById("button-correctans-5");
-  var buttonNext = document.getElementById("button-next-5");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton2.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("2 was wrong");
-}
-
-/**
- * wrong ans 3 button 5
- */
-function answrong35() {
-  var ansButton1 = document.getElementById("button-ans1-5");
-  var ansButton2 = document.getElementById("button-ans2-5");
-  var ansButton3 = document.getElementById("button-ans3-5");
-  var correctAnsButton = document.getElementById("button-correctans-5");
-  var buttonNext = document.getElementById("button-next-5");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton3.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("3 was wrong");
-}
-
-/**
- * correct ans button 6
- */
-function anscorrect6() {
-  var buttonNext = document.getElementById("button-next-6");
-  var ansButton1 = document.getElementById("button-ans1-6");
-  var ansButton2 = document.getElementById("button-ans2-6");
-  var ansButton3 = document.getElementById("button-ans3-6");
-  var correctAnsButton = document.getElementById("button-correctans-6");
-
-  correctAnsButton.style.backgroundColor = "green";
-  buttonNext.style.display = "";
-  console.info("correct");
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-  addScore();
-}
-
-/**
- * wrong ans 1 button 6
- */
-function answrong16() {
-  var buttonNext = document.getElementById("button-next-6");
-  var ansButton1 = document.getElementById("button-ans1-6");
-  var ansButton2 = document.getElementById("button-ans2-6");
-  var ansButton3 = document.getElementById("button-ans3-6");
-  var correctAnsButton = document.getElementById("button-correctans-6");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton1.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("1 was wrong");
-}
-
-/**
- * wrong ans 2 button 6
- */
-function answrong26() {
-  var ansButton1 = document.getElementById("button-ans1-6");
-  var ansButton2 = document.getElementById("button-ans2-6");
-  var ansButton3 = document.getElementById("button-ans3-6");
-  var correctAnsButton = document.getElementById("button-correctans-6");
-  var buttonNext = document.getElementById("button-next-6");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton2.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("2 was wrong");
-}
-
-/**
- * wrong ans 3 button 6
- */
-function answrong36() {
-  var ansButton1 = document.getElementById("button-ans1-6");
-  var ansButton2 = document.getElementById("button-ans2-6");
-  var ansButton3 = document.getElementById("button-ans3-6");
-  var correctAnsButton = document.getElementById("button-correctans-6");
-  var buttonNext = document.getElementById("button-next-6");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton3.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("3 was wrong");
-}
-
-/**
- * correct ans button 7
- */
-function anscorrect7() {
-  var buttonNext = document.getElementById("button-next-7");
-  var ansButton1 = document.getElementById("button-ans1-7");
-  var ansButton2 = document.getElementById("button-ans2-7");
-  var ansButton3 = document.getElementById("button-ans3-7");
-  var correctAnsButton = document.getElementById("button-correctans-7");
-
-  correctAnsButton.style.backgroundColor = "green";
-  buttonNext.style.display = "";
-  console.info("correct");
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-  addScore();
-}
-
-/**
- * wrong ans 1 button 7
- */
-function answrong17() {
-  var buttonNext = document.getElementById("button-next-7");
-  var ansButton1 = document.getElementById("button-ans1-7");
-  var ansButton2 = document.getElementById("button-ans2-7");
-  var ansButton3 = document.getElementById("button-ans3-7");
-  var correctAnsButton = document.getElementById("button-correctans-7");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton1.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("1 was wrong");
-}
-
-/**
- * wrong ans 2 button 7
- */
-function answrong27() {
-  var ansButton1 = document.getElementById("button-ans1-7");
-  var ansButton2 = document.getElementById("button-ans2-7");
-  var ansButton3 = document.getElementById("button-ans3-7");
-  var correctAnsButton = document.getElementById("button-correctans-7");
-  var buttonNext = document.getElementById("button-next-7");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton2.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("2 was wrong");
-}
-
-/**
- * wrong ans 3 button 7
- */
-function answrong37() {
-  var ansButton1 = document.getElementById("button-ans1-7");
-  var ansButton2 = document.getElementById("button-ans2-7");
-  var ansButton3 = document.getElementById("button-ans3-7");
-  var correctAnsButton = document.getElementById("button-correctans-7");
-  var buttonNext = document.getElementById("button-next-7");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton3.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("3 was wrong");
-}
-
-/**
- * correct ans button 8
- */
-function anscorrect8() {
-  var buttonNext = document.getElementById("button-next-8");
-  var ansButton1 = document.getElementById("button-ans1-8");
-  var ansButton2 = document.getElementById("button-ans2-8");
-  var ansButton3 = document.getElementById("button-ans3-8");
-  var correctAnsButton = document.getElementById("button-correctans-8");
-
-  correctAnsButton.style.backgroundColor = "green";
-  buttonNext.style.display = "";
-  console.info("correct");
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-  addScore();
-}
-
-/**
- * wrong ans 1 button 8
- */
-function answrong18() {
-  var buttonNext = document.getElementById("button-next-8");
-  var ansButton1 = document.getElementById("button-ans1-8");
-  var ansButton2 = document.getElementById("button-ans2-8");
-  var ansButton3 = document.getElementById("button-ans3-8");
-  var correctAnsButton = document.getElementById("button-correctans-8");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton1.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("1 was wrong");
-}
-
-/**
- * wrong ans 2 button 8
- */
-function answrong28() {
-  var ansButton1 = document.getElementById("button-ans1-8");
-  var ansButton2 = document.getElementById("button-ans2-8");
-  var ansButton3 = document.getElementById("button-ans3-8");
-  var correctAnsButton = document.getElementById("button-correctans-8");
-  var buttonNext = document.getElementById("button-next-8");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton2.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("2 was wrong");
-}
-
-/**
- * wrong ans 3 button 8
- */
-function answrong38() {
-  var ansButton1 = document.getElementById("button-ans1-8");
-  var ansButton2 = document.getElementById("button-ans2-8");
-  var ansButton3 = document.getElementById("button-ans3-8");
-  var correctAnsButton = document.getElementById("button-correctans-8");
-  var buttonNext = document.getElementById("button-next-8");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton3.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("3 was wrong");
-}
-
-/**
- * correct ans button 9
- */
-function anscorrect9() {
-  var buttonNext = document.getElementById("button-next-9");
-  var ansButton1 = document.getElementById("button-ans1-9");
-  var ansButton2 = document.getElementById("button-ans2-9");
-  var ansButton3 = document.getElementById("button-ans3-9");
-  var correctAnsButton = document.getElementById("button-correctans-9");
-
-  correctAnsButton.style.backgroundColor = "green";
-  buttonNext.style.display = "";
-  console.info("correct");
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-  addScore();
-}
-
-/**
- * wrong ans 1 button 9
- */
-function answrong19() {
-  var buttonNext = document.getElementById("button-next-9");
-  var ansButton1 = document.getElementById("button-ans1-9");
-  var ansButton2 = document.getElementById("button-ans2-9");
-  var ansButton3 = document.getElementById("button-ans3-9");
-  var correctAnsButton = document.getElementById("button-correctans-9");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton1.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("1 was wrong");
-}
-
-/**
- * wrong ans 2 button 9
- */
-function answrong29() {
-  var ansButton1 = document.getElementById("button-ans1-9");
-  var ansButton2 = document.getElementById("button-ans2-9");
-  var ansButton3 = document.getElementById("button-ans3-9");
-  var correctAnsButton = document.getElementById("button-correctans-9");
-  var buttonNext = document.getElementById("button-next-9");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton2.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("2 was wrong");
-}
-
-/**
- * wrong ans 3 button 9
- */
-function answrong39() {
-  var ansButton1 = document.getElementById("button-ans1-9");
-  var ansButton2 = document.getElementById("button-ans2-9");
-  var ansButton3 = document.getElementById("button-ans3-9");
-  var correctAnsButton = document.getElementById("button-correctans-9");
-  var buttonNext = document.getElementById("button-next-9");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton3.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("3 was wrong");
-}
-
-/**
- * correct ans button 10
- */
-function anscorrect10() {
-  var buttonNext = document.getElementById("button-next-10");
-  var ansButton1 = document.getElementById("button-ans1-10");
-  var ansButton2 = document.getElementById("button-ans2-10");
-  var ansButton3 = document.getElementById("button-ans3-10");
-  var correctAnsButton = document.getElementById("button-correctans-10");
-
-  correctAnsButton.style.backgroundColor = "green";
-  buttonNext.style.display = "";
-  console.info("correct");
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-  addScore();
-}
-
-/**
- * wrong ans 1 button 10
- */
-function answrong110() {
-  var buttonNext = document.getElementById("button-next-10");
-  var ansButton1 = document.getElementById("button-ans1-10");
-  var ansButton2 = document.getElementById("button-ans2-10");
-  var ansButton3 = document.getElementById("button-ans3-10");
-  var correctAnsButton = document.getElementById("button-correctans-10");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton1.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("1 was wrong");
-}
-
-/**
- * wrong ans 2 button 10
- */
-function answrong210() {
-  var ansButton1 = document.getElementById("button-ans1-10");
-  var ansButton2 = document.getElementById("button-ans2-10");
-  var ansButton3 = document.getElementById("button-ans3-10");
-  var correctAnsButton = document.getElementById("button-correctans-10");
-  var buttonNext = document.getElementById("button-next-10");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton2.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("2 was wrong");
-}
-
-/**
- * wrong ans 3 button 10
- */
-function answrong310() {
-  var ansButton1 = document.getElementById("button-ans1-10");
-  var ansButton2 = document.getElementById("button-ans2-10");
-  var ansButton3 = document.getElementById("button-ans3-10");
-  var correctAnsButton = document.getElementById("button-correctans-10");
-  var buttonNext = document.getElementById("button-next-10");
-
-  correctAnsButton.style.backgroundColor = "green";
-  ansButton3.style.backgroundColor = "red";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  ansButton1.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  ansButton1.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-
-  console.info("3 was wrong");
 }
 
 /**
  * Score counter
  */
-updateDisplay();
-
 function addScore() {
   count++;
   updateDisplay();
@@ -1558,12 +570,14 @@ function updateDisplay() {
   counterDisplayElem.innerHTML = "Score: " + count + " punten";
 }
 
-//score bar
+/** 
+ * score bar
+ */
 var i = 0;
-function move() {
+function moveProgressBar() {
   if (i == 0) {
     i = 1;
-    var elem = document.getElementById("myBar");
+    var bar = document.getElementById("bar");
     var width = 1;
     var id = setInterval(frame, 25);
     var eind = document.getElementById("eindscore");
@@ -1575,14 +589,16 @@ function move() {
       i = 0;
     } else {
       width++;
-      elem.style.width = width + "%";
-      elem.innerHTML = width / 10;
+      bar.style.width = width + "%";
+      bar.innerHTML = width / 10;
       eind.innerHTML = "Gefeliciteerd! Je hebt " + count + " punten gehaald!";
     }
   }
 }
 
-//login POGING 2
+/**
+ * login with pattern check
+ */
 function login() {
   var naam = document.getElementById("naam").value;
   var patt = /(^s|[a-z]{2})(?=\d{7}$)/;
@@ -1590,7 +606,7 @@ function login() {
   console.log("naam: " + naam);
   console.log("result: " + result);
   if (result == null || naam == "" || naam == null) {
-    console.log("nee deel 1");
+    console.log("login fout");
     error2.style.display = "";
   } else {
     checkStudent(naam);
@@ -1625,14 +641,13 @@ function login() {
 * Student is successfully identified
 */
 function studentIdentificationSucces(student) {
-  console.info(student); // Een Javascript-object met studentnummer, voornaam en achternaam
+  console.info(student);
   var elem = document.getElementById("naam-display-display");
   var naamDisplay = document.getElementById("naam-display");
   elem.innerHTML = "Naam: " + student.firstName + " " + student.lastName;
   showPage("page-questions"); 
   console.log("succesinlog");
   naamDisplay.style.display = "";
-  // Schrijf hier de code die uitgevoerd moet worden als het studentnummer klopt
 }
 
 /**
@@ -1642,7 +657,6 @@ function studentIdentificationFailed(errorMessage) {
   error.style.display = "";
   console.error(errorMessage);
   console.log("nee error");
-  // Schrijf hier de code die uitgevoerd moet worden als het studentnummer NIET klopt
 }
 
 //send score to api
@@ -1694,3 +708,4 @@ function sendScore() {
 // Initialize
 addButtonActions();
 showStartPage();
+updateDisplay();
