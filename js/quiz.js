@@ -102,6 +102,17 @@ const buttonNext8 = document.getElementById("button-next-8");
 const buttonNext9 = document.getElementById("button-next-9");
 const buttonNext10 = document.getElementById("button-next-10");
 
+//Back buttons
+const buttonBack2 = document.getElementById("button-back-2");
+const buttonBack3 = document.getElementById("button-back-3");
+const buttonBack4 = document.getElementById("button-back-4");
+const buttonBack5 = document.getElementById("button-back-5");
+const buttonBack6 = document.getElementById("button-back-6");
+const buttonBack7 = document.getElementById("button-back-7");
+const buttonBack8 = document.getElementById("button-back-8");
+const buttonBack9 = document.getElementById("button-back-9");
+const buttonBack10 = document.getElementById("button-back-10");
+
 //extra counters
 const naam = document.getElementById("naam-display");
 const counter = document.getElementById("live-score");
@@ -157,6 +168,9 @@ function addButtonActions() {
   nextButton2.addEventListener("click", function () {
     showPage("page-questions3");
   });
+  buttonBack2.addEventListener("click", function () {
+    showPage("page-questions");
+  });
 
   //Q3
   correctAnsButton3.addEventListener("click", function () {
@@ -173,6 +187,9 @@ function addButtonActions() {
   });
   nextButton3.addEventListener("click", function () {
     showPage("page-questions4");
+  });
+  buttonBack3.addEventListener("click", function () {
+    showPage("page-questions2");
   });
 
   //Q4
@@ -191,6 +208,9 @@ function addButtonActions() {
   nextButton4.addEventListener("click", function () {
     showPage("page-questions5");
   });
+  buttonBack4.addEventListener("click", function () {
+    showPage("page-questions3");
+  });
 
   //Q5
   correctAnsButton5.addEventListener("click", function () {
@@ -207,6 +227,9 @@ function addButtonActions() {
   });
   nextButton5.addEventListener("click", function () {
     showPage("page-questions6");
+  });
+  buttonBack5.addEventListener("click", function () {
+    showPage("page-questions3");
   });
 
   //Q6
@@ -225,6 +248,9 @@ function addButtonActions() {
   nextButton6.addEventListener("click", function () {
     showPage("page-questions7");
   });
+  buttonBack6.addEventListener("click", function () {
+    showPage("page-questions5");
+  });
 
   //Q7
   correctAnsButton7.addEventListener("click", function () {
@@ -241,6 +267,9 @@ function addButtonActions() {
   });
   nextButton7.addEventListener("click", function () {
     showPage("page-questions8");
+  });
+  buttonBack7.addEventListener("click", function () {
+    showPage("page-questions6");
   });
 
   //Q8
@@ -259,6 +288,9 @@ function addButtonActions() {
   nextButton8.addEventListener("click", function () {
     showPage("page-questions9");
   });
+  buttonBack8.addEventListener("click", function () {
+    showPage("page-questions7");
+  });
 
   //Q9
   correctAnsButton9.addEventListener("click", function () {
@@ -276,6 +308,9 @@ function addButtonActions() {
   nextButton9.addEventListener("click", function () {
     showPage("page-questions10");
   });
+  buttonBack9.addEventListener("click", function () {
+    showPage("page-questions8");
+  });
 
   //Q10
   correctAnsButton10.addEventListener("click", function () {
@@ -292,6 +327,9 @@ function addButtonActions() {
   });
   nextButton10.addEventListener("click", function () {
     showEndPage();
+  });
+  buttonBack10.addEventListener("click", function () {
+    showPage("page-questions9");
   });
 }
 
@@ -538,7 +576,6 @@ function showEndPage() {
  */
  function ansButton(buttonNext, clickedButton, ansButton2, ansButton3, correctAnsButton, correct) {
   if (correct) {
-    correctAnsButton.style.backgroundColor = "green";
     console.log("correct")
     addScore();
   }
@@ -546,6 +583,7 @@ function showEndPage() {
     clickedButton.style.backgroundColor = "red";
     console.log("wrong")
   }
+  correctAnsButton.style.backgroundColor = "green";
   buttonNext.style.display = "";
   correctAnsButton.disabled = true;
   clickedButton.disabled = true;
