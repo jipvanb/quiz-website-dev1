@@ -118,7 +118,15 @@ const naam = document.getElementById("naam-display");
 const counter = document.getElementById("live-score");
 let counterDisplayElem = document.getElementById("counter-display");
 let count = 0;
+const timerDisplay = document.getElementById("timer-display");
+let timer = 0;
+let timerStarted = false;
 
+//vragen array
+const vragen = [
+  ["Brons is een samenstelling van welke twee metalen?", "ijzer & nickel", "koper & tin", "titanium & koper", "tin & zink"],
+  ["Wat is in Celsius de koudst mogelijke temperatuur die mogelijk is ook wel het absolute nulpunt genoemd?", "0 °C", "−265 °C", "−273 °C", "−284 °C"]
+];
 
 /**
  * Add actions to page buttons
@@ -554,6 +562,10 @@ function showStartPage() {
   page.style.display = "block";
 
   console.info("Je bent nu op " + pagename);
+  if (pagename == "page-questions") {
+    console.log("de timer wordt gestart");
+    timerStarted = true;
+  };
 }
 
 /**
@@ -576,12 +588,12 @@ function showEndPage() {
  */
  function ansButton(buttonNext, clickedButton, ansButton2, ansButton3, correctAnsButton, correct) {
   if (correct) {
-    console.log("correct")
+    console.log("correct");
     addScore();
   }
   else {
     clickedButton.style.backgroundColor = "red";
-    console.log("wrong")
+    console.log("wrong");
   }
   correctAnsButton.style.backgroundColor = "green";
   buttonNext.style.display = "";
@@ -743,6 +755,21 @@ function sendScore() {
   xHttp.send();
 }
 
+//timer
+//function startTimer() {
+var timername = setInterval(timerAction, 1000);
+//};
+
+function timerAction() {
+  if (timerStarted == true) {
+  timer++
+  timerDisplay.innerHTML = timer;
+  };
+}
+
+function stopTimer() {
+  clearInterval(timername);
+}
 // Initialize
 addButtonActions();
 showStartPage();
