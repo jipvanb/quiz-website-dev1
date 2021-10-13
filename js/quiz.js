@@ -215,30 +215,6 @@ function showEndPage() {
 }
 
 /**
- * ans button
- */
-/*  function ansButton(buttonNext, clickedButton, ansButton2, ansButton3, correctAnsButton, correct) {
-  if (correct) {
-    console.log("correct");
-    addScore();
-  }
-  else {
-    clickedButton.style.backgroundColor = "red";
-    console.log("wrong");
-  }
-  correctAnsButton.style.backgroundColor = "green";
-  buttonNext.style.display = "";
-  correctAnsButton.disabled = true;
-  clickedButton.disabled = true;
-  ansButton2.disabled = true;
-  ansButton3.disabled = true;
-  correctAnsButton.style.cursor = "not-allowed";
-  clickedButton.style.cursor = "not-allowed";
-  ansButton2.style.cursor = "not-allowed";
-  ansButton3.style.cursor = "not-allowed";
-} */
-
-/**
  * Score counter
  */
 function addScore() {
@@ -387,9 +363,7 @@ function sendScore() {
 }
 
 //timer
-//function startTimer() {
 var timername = setInterval(timerAction, 1000);
-//};
 
 function timerAction() {
   if (timerStarted == true) {
