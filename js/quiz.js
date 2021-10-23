@@ -6,6 +6,8 @@ let studentnumber;
 //score submission popups at endpage
 const scoreSucc = document.getElementById("scoreSucc");
 const scoreFout = document.getElementById("scoreFout");
+const error = document.getElementById("error");
+const error2 = document.getElementById("error2");
 
 //all buttons
 //start
@@ -26,7 +28,7 @@ const ans2 = document.getElementById("ans2");
 const ans3 = document.getElementById("ans3");
 const ans4 = document.getElementById("ans4");
 const next = document.getElementById("button-next");
-const vraagtitel = document.getElementById("vraagtitel")
+const vraagtitel = document.getElementById("vraagtitel");
 var currectQuestion = 0;
 
 //extra counters
@@ -100,7 +102,7 @@ function hideAllPages() {
 
 //show question
 function showQuestion(vraagnummer){ 
-vraagtitel.innerHTML = "Vraag " + (currectQuestion + 1) + "."
+vraagtitel.innerHTML = "Vraag " + (currectQuestion + 1) + ".";
 vraag.innerHTML = vragen[vraagnummer][0];
 ans1.innerHTML = vragen[vraagnummer][1];
 ans2.innerHTML = vragen[vraagnummer][2];
@@ -159,7 +161,7 @@ function antwoord1(clickedButton, clickedAns) {
   else {
     ans4.style.backgroundColor = "green";
   }
-  currectQuestion++
+  currectQuestion++;
 }
 
 /**
@@ -167,16 +169,19 @@ function antwoord1(clickedButton, clickedAns) {
  */
 function showStartPage() {
   naam.style.display = "none";
+  counter.style.display = "none";
+  timerDisplay.style.display = "none";
   //Reset score
   count = 0;
   updateDisplay();
+
+  timerStarted = false;
+  timer = 0;
 
   hideAllPages();
 
   //Display page (start page)
   startPage.style.display = "block";
-
-  counter.style.display = "";
 
   console.info("Je bent nu op de startpagina");
 }
@@ -195,7 +200,7 @@ function showStartPage() {
   if (pagename == "page-questions") {
     console.log("de timer wordt gestart");
     timerStarted = true;
-  };
+  }
 }
 
 /**
@@ -206,11 +211,12 @@ function showEndPage() {
 
   hideAllPages();
   stopTimer();
+  timerStarted = false;
 
   page.style.display = "block";
 
   console.info("Je bent nu bij het einde");
-  //sendScore();
+  sendScore();
   moveProgressBar();
 }
 
@@ -305,6 +311,8 @@ function studentIdentificationSucces(student) {
   showPage("page-questions"); 
   console.log("succesinlog");
   naamDisplay.style.display = "";
+  counter.style.display = "";
+  timerDisplay.style.display = "";
 }
 
 /**
@@ -342,6 +350,7 @@ function sendScore() {
       quizMaster: "s1168975",
       student: studentnumber,
       points: count,
+      time: timer,
     })
   );
 }
@@ -367,9 +376,9 @@ var timername = setInterval(timerAction, 1000);
 
 function timerAction() {
   if (timerStarted == true) {
-  timer++
-  timerDisplay.innerHTML = timer;
-  };
+  timer++;
+  timerDisplay.innerHTML = "Timer: " + timer;
+  }
 }
 
 function stopTimer() {
