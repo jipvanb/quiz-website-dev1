@@ -3,6 +3,38 @@
 //studentnumber for login
 let studentnumber;
 
+//highscore table
+const name1 = document.getElementById("naam1");
+const name2 = document.getElementById("naam2");
+const name3 = document.getElementById("naam3");
+const name4 = document.getElementById("naam4");
+const name5 = document.getElementById("naam5");
+const name6 = document.getElementById("naam6");
+const name7 = document.getElementById("naam7");
+const name8 = document.getElementById("naam8");
+const name9 = document.getElementById("naam9");
+const name10 = document.getElementById("naam10");
+const score1 = document.getElementById("score1");
+const score2 = document.getElementById("score2");
+const score3 = document.getElementById("score3");
+const score4 = document.getElementById("score4");
+const score5 = document.getElementById("score5");
+const score6 = document.getElementById("score6");
+const score7 = document.getElementById("score7");
+const score8 = document.getElementById("score8");
+const score9 = document.getElementById("score9");
+const score10 = document.getElementById("score10");
+const time1 = document.getElementById("time1");
+const time2 = document.getElementById("time2");
+const time3 = document.getElementById("time3");
+const time4 = document.getElementById("time4");
+const time5 = document.getElementById("time5");
+const time6 = document.getElementById("time6");
+const time7 = document.getElementById("time7");
+const time8 = document.getElementById("time8");
+const time9 = document.getElementById("time9");
+const time10 = document.getElementById("time10");
+
 //score submission popups at endpage
 const scoreSucc = document.getElementById("scoreSucc");
 const scoreFout = document.getElementById("scoreFout");
@@ -10,6 +42,8 @@ const error = document.getElementById("error");
 const error2 = document.getElementById("error2");
 
 //all buttons
+//twitter
+const twitterButton = document.getElementById("twitter");
 //start
 const startButton = document.getElementById("button-start");
 const questionsButton = document.getElementById("button-questions");
@@ -82,6 +116,9 @@ function addButtonActions() {
   });
   next.addEventListener("click", function () {
     nextButton();
+  });
+  twitterButton.addEventListener("click", function () {
+    window.open("https://twitter.com/intent/tweet?text=Ik heb de kennis quiz gehaald in " + timer + " seconden en met " + count + " punten!");
   });
 }
 
@@ -362,6 +399,7 @@ function sendScore() {
     if (xHttp.readyState == XMLHttpRequest.DONE) {
       var response = JSON.parse(xHttp.response);
           console.log(response);
+          sortScore(response);
       }
   };
   xHttp.onerror = function () {
@@ -369,6 +407,45 @@ function sendScore() {
   };
   xHttp.open("GET", "https://quiz.clow.nl/v1/highscores/s1168975", true);
   xHttp.send();
+}
+
+//sort score array and display it
+function sortScore(score) {
+  score.sort(function(a, b){
+    if (a.points === b.points) {
+      return a.time - b.time;
+    }
+    return b.points - a.points});
+  name1.innerHTML = score [0].player.firstName + " " + score[0].player.lastName;
+  name2.innerHTML = score [1].player.firstName + " " + score[1].player.lastName;
+  name3.innerHTML = score [2].player.firstName + " " + score[2].player.lastName;
+  name4.innerHTML = score [3].player.firstName + " " + score[3].player.lastName;
+  name5.innerHTML = score [4].player.firstName + " " + score[4].player.lastName;
+  name6.innerHTML = score [5].player.firstName + " " + score[5].player.lastName;
+  name7.innerHTML = score [6].player.firstName + " " + score[6].player.lastName;
+  name8.innerHTML = score [7].player.firstName + " " + score[7].player.lastName;
+  name9.innerHTML = score [8].player.firstName + " " + score[8].player.lastName;
+  name10.innerHTML = score [9].player.firstName + " " + score[9].player.lastName;
+  score1.innerHTML = score [0].points + " punten";
+  score2.innerHTML = score [1].points + " punten";
+  score3.innerHTML = score [2].points + " punten";
+  score4.innerHTML = score [3].points + " punten";
+  score5.innerHTML = score [4].points + " punten";
+  score6.innerHTML = score [5].points + " punten";
+  score7.innerHTML = score [6].points + " punten";
+  score8.innerHTML = score [7].points + " punten";
+  score9.innerHTML = score [8].points + " punten";
+  score10.innerHTML = score [9].points + " punten";
+  time1.innerHTML = score [0].time + " sec";
+  time2.innerHTML = score [1].time + " sec";
+  time3.innerHTML = score [2].time + " sec";
+  time4.innerHTML = score [3].time + " sec";
+  time5.innerHTML = score [4].time + " sec";
+  time6.innerHTML = score [5].time + " sec";
+  time7.innerHTML = score [6].time + " sec";
+  time8.innerHTML = score [7].time + " sec";
+  time9.innerHTML = score [8].time + " sec";
+  time10.innerHTML = score [9].time + " sec";
 }
 
 //timer
@@ -384,8 +461,10 @@ function timerAction() {
 function stopTimer() {
   clearInterval(timername);
 }
+
 // Initialize
 addButtonActions();
 showStartPage();
 updateDisplay();
 showQuestion(0);
+getScore();
