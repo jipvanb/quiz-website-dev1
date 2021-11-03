@@ -415,7 +415,7 @@ function sortScore(score) {
     if (a.points === b.points) {
       return a.time - b.time;
     }
-    return b.points - a.points});
+    return b.points - a.points;});
   name1.innerHTML = score [0].player.firstName + " " + score[0].player.lastName;
   name2.innerHTML = score [1].player.firstName + " " + score[1].player.lastName;
   name3.innerHTML = score [2].player.firstName + " " + score[2].player.lastName;
